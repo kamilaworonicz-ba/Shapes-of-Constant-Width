@@ -12,7 +12,7 @@ Can a shape with corners roll beneath a board without making it rise and fall? T
 | **Devices** | Designed primarily for computers and tablets |
 | **Scope** | 3 interactive lessons; lessons 4–5 and “Going further” are concepts |
 
-**[▶ Open the course](LINK)**
+**[▶ Open the course](https://kamilaworonicz-ba.github.io/Shapes-of-Constant-Width/)**
 
 ## Learning goals
 
