@@ -4,6 +4,7 @@
 
 Can a shape with corners roll beneath a board without making it rise and fall? This prototype introduces constant width through a sequence of experiments, a geometric construction, and a bicycle design challenge.
 
+| Course at a glance | |
 |---|---|
 | **Audience** | Ages 12–14 (middle school). Adults might be surprised too. |
 | **Length** | 3 interactive lessons, 17 screens, about 21–28 minutes |
