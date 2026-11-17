@@ -6,7 +6,7 @@ Can a shape with corners roll beneath a board without making it rise and fall? T
 
 |  | |
 |---|---|
-| **Audience** | Ages 12–14 (middle school). Adults might be surprised too. |
+| **Audience** | Ages 12–16. Adults might be surprised too. |
 | **Length** | 3 interactive lessons, 17 screens, about 21–28 minutes |
 | **Prerequisites** | Basic familiarity with simple shapes (triangles, squares, regular polygons, circles), the radius, and a compass |
 | **Devices** | Designed primarily for computers and tablets |
