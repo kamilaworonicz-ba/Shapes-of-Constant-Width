@@ -74,7 +74,7 @@ button{font:inherit;cursor:pointer}.pri{background:var(--acc);color:#10152f;bord
 <main id="home"><div class="top"><div class="tt"><h1>Shapes of Constant Width</h1><p class="aud">Designed for students ages 12–16. Adults might be surprised too.</p></div><svg class="hero" viewBox="0 0 420 180" role="img" aria-label="A circle, a Reuleaux triangle, and a Reuleaux heptagon of the same width rolling along a line"><path d="M50 73 Q80 43 107.9 70.9" fill="none" stroke="#fff" stroke-width="2.2" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M107.2 63.4 L110 73 L100.4 70.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M180 73 Q210 43 237.9 70.9" fill="none" stroke="#fff" stroke-width="2.2" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M237.2 63.4 L240 73 L230.4 70.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 73 Q340 43 367.9 70.9" fill="none" stroke="#fff" stroke-width="2.2" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M367.2 63.4 L370 73 L360.4 70.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80" cy="125.0" r="40.0" fill="#8e98ff"/><path d="M210.00 85.00 A80.00 80.00 0 0 1 250.00 154.28 A80.00 80.00 0 0 1 170.00 154.28 A80.00 80.00 0 0 1 210.00 85.00Z" fill="#dfff54"/><path d="M340.00 85.00 A80.00 80.00 0 0 1 372.08 100.45 A80.00 80.00 0 0 1 380.00 135.16 A80.00 80.00 0 0 1 357.80 162.99 A80.00 80.00 0 0 1 322.20 162.99 A80.00 80.00 0 0 1 300.00 135.16 A80.00 80.00 0 0 1 307.92 100.45 A80.00 80.00 0 0 1 340.00 85.00Z" fill="#ff6b52"/><line x1="10" y1="166.5" x2="410" y2="166.5" stroke="#aab3ff" stroke-width="3" stroke-linecap="round"/></svg></div><div class="cards" id="cards"></div><footer class="pf">Interactive math learning prototype by Kamila Woronicz · <a href="README_LINK" target="_blank" rel="noopener">About this project</a><br><a href="mailto:kamila.woronicz@gmail.com">kamila.woronicz@gmail.com</a></footer></main>
 <iframe id="fr" class="hidden" title="Lesson"></iframe>
 <script type="text/plain" id="L1"><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Shapes of Constant Width – Lesson 1</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Shapes of Constant Width (EN)_final</title>
 <style>
 :root{--bg:#f7f8fc;--card:#fff;--ink:#10152f;--mut:#626986;--line:#dce0ec;--acc:#1738e8;--accbg:#eef1ff;--gr:#eef1ff;--ok:#e6ffb3;--okb:#8bc923;--warn:#fff2df;--warnb:#ed8a31;--lime:#dfff54;--coral:#ff6b52;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1226;--card:#181c38;--ink:#eef0ff;--mut:#9aa2c8;--line:#2a3060;--acc:#8fa1ff;--accbg:#232a5c;--gr:#1d2248;--ok:#223d12;--okb:#6aa31e;--warn:#40290f;--warnb:#d98129;color-scheme:dark}}
@@ -277,17 +277,17 @@ main .ctl{margin-bottom:14px!important}
 #q.icf .oic canvas{width:28px!important;height:28px!important}#q.icf.ic2 .oic{width:62px}#q.icf.ic1 .oic{width:28px}
 .trow .qh{flex:1;min-width:0}
 #lesson .trow h1#t{font-size:clamp(22px,2.4vw,28px)!important;font-weight:650!important;letter-spacing:-.2px!important;line-height:1.28!important;margin:0!important}
-#t b,#t .hl{color:#dfff54;font-weight:inherit}#t .oic{vertical-align:-8px}#t .oic canvas{width:36px!important;height:36px!important}
+#t b,#t .hl{color:#dfff54;font-weight:inherit}#t .oic{vertical-align:-6px;line-height:0}#t .oic canvas{width:32px!important;height:32px!important}
 .qh .lead{margin:0 0 6px!important;font-size:17px!important}.qh .lead.sub{margin:8px 0 0!important}
 #q>legend{display:none!important}
-.trow{position:relative}.trow .prg{position:absolute!important;right:0;top:0}.trow .qh{width:100%}
+.trow{position:relative}.trow .prg{position:absolute!important;right:0;top:0}.trow .qh{width:100%;padding-top:26px;box-sizing:content-box}
 #q .opt{padding-right:46px!important}#q.thq .opt{padding-left:46px!important}
 #lesson>#todo{margin:6px 0 12px!important;flex:none!important;min-height:0}
-.opt .hl{color:#dfff54}
-.trow{align-items:flex-start}.trow .qh{display:flex;flex-direction:column;justify-content:flex-end;min-height:68px}.trow .qh #t{flex:none!important}
+.opt .hl{color:#dfff54}.chip.pz{animation:pls 1.4s ease-in-out infinite}@media(prefers-reduced-motion:reduce){.chip.pz{animation:none;box-shadow:0 0 0 3px rgba(154,165,255,.7)}}
+.trow{align-items:flex-start}.trow .qh{display:flex;flex-direction:column;justify-content:flex-end;min-height:36px}.trow .qh #t{flex:none!important}
 #lesson>#todo{min-height:20px}#lesson>#todo.hidden{display:block!important;visibility:hidden}
 .hq .mtd{margin:6px 0 4px!important;flex:none!important;min-height:20px}.hq .mtd.hidden{display:block!important;visibility:hidden}.hin2 .hm{display:none!important}.hin2{height:50px!important}
-.hin2 #hck{position:absolute;right:0;top:2px}
+.hin2 #hck{position:absolute;right:0;top:2px}@media (max-width:900px){.hin2 #hck{top:56px}.hin2{margin-bottom:52px!important}}
 </style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet"></head><body class="dk">
 <header><div class="brand"><span class="lnum">01</span><span>Shapes of Constant Width</span><span id="ht">Rolling Shapes</span></div><div class="hrt"><button type="button" class="hb" id="hb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Home</button></div></header>
 <main>
@@ -309,7 +309,7 @@ main .ctl{margin-bottom:14px!important}
 'use strict';
 const $=id=>document.getElementById(id),cv=$('cv'),PI=Math.PI,S3=Math.sqrt(3),f=x=>x.toFixed(1),poly=(n,o)=>Array.from({length:n},(_,i)=>[Math.cos(2*PI*i/n+o),Math.sin(2*PI*i/n+o)]);
 let c=cv.getContext('2d');const cache={},I={};
-function pts(t){if(cache[t])return cache[t];let p;if(t==='circle')p=poly(360,0);else if(t==='square')p=poly(4,PI/4);else if(t==='triangle')p=poly(3,-PI/2);else if(t==='bsq'){p=[];const v=poly(4,PI/4),Rb=2.2;for(let j=0;j<4;j++){const a=v[j],b=v[(j+1)%4],mx=(a[0]+b[0])/2,my=(a[1]+b[1])/2,nn=Math.hypot(mx,my),hh=Math.hypot(b[0]-a[0],b[1]-a[1])/2,d=Math.sqrt(Rb*Rb-hh*hh),o=[-mx/nn*(d-nn),-my/nn*(d-nn)],s=Math.atan2(a[1]-o[1],a[0]-o[0]);let dl=Math.atan2(b[1]-o[1],b[0]-o[0])-s;while(dl>PI)dl-=2*PI;while(dl<-PI)dl+=2*PI;for(let i=0;i<40;i++)p.push([o[0]+Rb*Math.cos(s+dl*i/40),o[1]+Rb*Math.sin(s+dl*i/40)])}}else if(t==='ellipse'){p=[];for(let i=0;i<160;i++){const u=2*PI*i/160;p.push([Math.cos(u),.62*Math.sin(u)])}}else if(t==='r5'){p=[];const n=5,k=2,v=poly(n,-PI/2);for(let j=0;j<n;j++){const o=v[j],a=v[(j+k)%n],b=v[(j+k+1)%n],r=Math.hypot(a[0]-o[0],a[1]-o[1]),s=Math.atan2(a[1]-o[1],a[0]-o[0]);let d=Math.atan2(b[1]-o[1],b[0]-o[0])-s;while(d>PI)d-=2*PI;while(d<-PI)d+=2*PI;for(let i=0;i<40;i++)p.push([o[0]+r*Math.cos(s+d*i/40),o[1]+r*Math.sin(s+d*i/40)])}}else if(t==='lens'){p=[];const th=Math.asin(Math.sqrt(.84));for(let i=0;i<=60;i++){const u=-th+2*th*i/60;p.push([Math.sin(u),Math.cos(u)-.4])}for(let i=0;i<=60;i++){const u=th-2*th*i/60;p.push([Math.sin(u),-(Math.cos(u)-.4)])}}
+function pts(t){if(cache[t])return cache[t];let p;if(t==='circle')p=poly(360,0);else if(t==='square')p=poly(4,PI/4);else if(t==='triangle')p=poly(3,-PI/2);else if(t==='bsq'){p=[];const v=poly(4,PI/4),Rb=2.2;for(let j=0;j<4;j++){const a=v[j],b=v[(j+1)%4],mx=(a[0]+b[0])/2,my=(a[1]+b[1])/2,nn=Math.hypot(mx,my),hh=Math.hypot(b[0]-a[0],b[1]-a[1])/2,d=Math.sqrt(Rb*Rb-hh*hh),o=[-mx/nn*(d-nn),-my/nn*(d-nn)],s=Math.atan2(a[1]-o[1],a[0]-o[0]);let dl=Math.atan2(b[1]-o[1],b[0]-o[0])-s;while(dl>PI)dl-=2*PI;while(dl<-PI)dl+=2*PI;for(let i=0;i<40;i++)p.push([o[0]+Rb*Math.cos(s+dl*i/40),o[1]+Rb*Math.sin(s+dl*i/40)])}}else if(t==='ellipse'){p=[];for(let i=0;i<160;i++){const u=2*PI*i/160;p.push([Math.cos(u),.62*Math.sin(u)])}}else if(t==='r5'){p=[];const a5=.033,c5=.011,b5=.0015;for(let i=0;i<720;i++){const u=2*PI*i/720-PI/2,h=1+a5*Math.cos(5*u)+c5*Math.cos(3*u+.7)+b5*Math.sin(7*u),dh=-5*a5*Math.sin(5*u)-3*c5*Math.sin(3*u+.7)+7*b5*Math.cos(7*u);p.push([h*Math.cos(u)-dh*Math.sin(u),h*Math.sin(u)+dh*Math.cos(u)])}}else if(t==='lens'){p=[];const th=Math.asin(Math.sqrt(.84));for(let i=0;i<=60;i++){const u=-th+2*th*i/60;p.push([Math.sin(u),Math.cos(u)-.4])}for(let i=0;i<=60;i++){const u=th-2*th*i/60;p.push([Math.sin(u),-(Math.cos(u)-.4)])}}
  else{p=[];const v=poly(3,-PI/2);for(let j=0;j<3;j++){const o=v[j],a=v[(j+1)%3],b=v[(j+2)%3],s=Math.atan2(a[1]-o[1],a[0]-o[0]);let d=Math.atan2(b[1]-o[1],b[0]-o[0])-s;while(d<0)d+=2*PI;for(let i=0;i<=120;i++){const u=s+d*i/120;p.push([o[0]+S3*Math.cos(u),o[1]+S3*Math.sin(u)])}}}return cache[t]=p}
 function bnd(t,a){if(t==='circle')return{lo:-1,hi:1,w:2};let lo=1e9,hi=-1e9;const s=Math.sin(a),k=Math.cos(a);for(const[x,y]of pts(t)){const v=x*s+y*k;if(v<lo)lo=v;if(v>hi)hi=v}return{lo,hi,w:hi-lo}}
 function inf(t){if(I[t])return I[t];let u=0,a=0;for(let k=0;k<720;k++){const w=bnd(t,k*PI/360).w;if(w>u+1e-9){u=w;a=k*PI/360}}if(t==='circle'||t==='reuleaux')a=0;return I[t]={u,a}}
@@ -321,7 +321,7 @@ function saveSt(){if(V>0)ST[V]={fl:JSON.parse(JSON.stringify(fl)),sp:{...sp},rg:
 const SC=[null,
 {t:'A board on rolling shapes',ch:['circle','square','lens'],nm:['Circles','Squares','Lenses'],sh:'circle'},
 {t:'Smaller ups and downs?',ch:['square','triangle'],nm:['Squares','Triangles'],sh:'square'},
-{t:'Why does the board rise and fall?',ld:'The rolling shapes are hidden.',ch:[],sh:'circle'},
+{t:'Why does the board rise and fall?',ch:[],sh:'circle'},
 {t:'Measure a new shape',ch:[],sh:'reuleaux'},
 {t:'Any ups and downs?',ch:['reuleaux','triangle'],nm:['',''],sh:'reuleaux'},
 {t:'No ups and downs',ch:[],sh:'reuleaux'}];
@@ -335,7 +335,7 @@ function showKey(k){const d=KEYS[k];$('ks').textContent=d[0];$('kb').innerHTML=d
 const EV={
 1:()=>{const ok=A.p1===3,all=seen();if(ok){setFb('On circles, the board stays at the same height the whole time. On the other two shapes, it rises and falls.','ok','Yes!');doneQ();setNext(1)}else{setFb(HINT('Does the board\'s height change as each shape rolls?','On circles, the board\'s height stays at 20 cm. What happens on the other shapes?'),'warn');retryQ();setNext(0)}},
 2:()=>{if(A.p2===1){setFb('On triangles, the board rises and falls less than on squares, even though triangles have “sharper” corners.','ok','Exactly.');doneQ();setNext(1)}else{setFb(HINT('Compare the board\'s highest and lowest height above the ground.','Looks can be deceiving! Compare how much the board rises and falls on squares and on triangles.'),'warn');retryQ();setNext(0)}},
-3:()=>{if(A.p3===3){fl.rev=0;sh='circle';doneQ();setFb('The board rests on the highest point of each shape. If that point always stays at the same height, so does the board.','ok','Exactly!');setNext(1)}else{retryQ();setNext(0);const t3=['ellipse','r5','bsq'][A.p3];fl.e=(fl.e||0)+1;setFb(CXM[t3]+(fl.e>1?' Where does the shape touch the board? Watch that spot as it rolls.':''),'warn');sh=t3;SS[t3]={a:inf(t3).a,dist:0,gnd:0};delete rg[t3];sp[t3]=0;fl.rev=1;play=true;$('play').textContent='Ⅱ Pause'}},
+3:()=>{if(A.p3===3){fl.rev=0;fl.sw=sh!=='circle'?1:0;fl.sd=0;doneQ();setFb('The board rests on the highest point of each shape. If that point always stays at the same height, so does the board.','ok','Exactly!');setNext(1)}else{retryQ();setNext(0);const t3=['ellipse','r5','bsq'][A.p3];fl.e=(fl.e||0)+1;setFb(CXM[t3]+(fl.e>1?' Where does the shape touch the board? Watch that spot as it rolls.':''),'warn');sh=t3;SS[t3]={a:inf(t3).a,dist:0,gnd:0};delete rg[t3];sp[t3]=0;fl.rev=1;play=true;$('play').textContent='Ⅱ Pause'}},
 5:()=>{if(A.p5===2){setFb('','ok','Yes!');doneQ();setNext(1);showKey(5)}else{setFb(HINT('Think back to your measurements on the last screen. What did they have in common?','The shape\'s highest point was always 20 cm above the ground, and that\'s exactly where the board rests. What does that mean for the board\'s height?'),'warn');retryQ();setNext(0)}}};
 const setFb=(m,cls,hd)=>{lastFb={m,cls,hd};const e=$('fb');e.textContent=m;e.className='fb '+cls;renderFb(e.innerHTML,cls,hd);okfb(m,cls)};
 function setNext(v){nok=v;$('next').disabled=!v;$('next').textContent=(V===N&&v)?'Go to Lesson 2 ›':'Continue ›';syncFb();prog();if(!ld2)saveSt()}
@@ -346,12 +346,13 @@ function icon(cn,k){const a=startA(k),P=pts(k).map(([x,y])=>[x*Math.cos(a)-y*Mat
 const ICO=(...ks)=>'<span class="oic">'+ks.map(k=>'<canvas width="72" height="72" data-k="'+k+'"></canvas>').join('')+'</span>';
 function ask(key,text,opts){const q=$('q');q.className='';q.innerHTML='<legend>'+text+'</legend>'+opts.map((o,i)=>'<button type="button" class="opt" data-i="'+i+'"><span class="lt2">'+'ABCD'[i]+'</span><span class="ot">'+o+'</span></button>').join('');q.classList.remove('hidden');q.querySelectorAll('canvas[data-k]').forEach(k=>icon(k,k.dataset.k));
  q.querySelectorAll('button').forEach(b=>b.onclick=()=>{const i=+b.dataset.i;
-  if(fl.v&&EV[V]){A[key]=i;q.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));EV[V]();saveSt();return}
+  if(fl.v&&EV[V]){A[key]=i;q.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));EV[V]();aSw();saveSt();return}
   if(fl.lock)return;A[key]=i;fl['d'+key]=1;q.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));ans(key)})}
-function rch(){const s=SC[V],l=s.ch;$('chips').innerHTML=l.map((k,i)=>'<button type="button" class="chip'+(k===sh?' on':'')+'" data-k="'+k+'"><canvas width="72" height="72" data-k="'+k+'" aria-hidden="true"></canvas><span>'+s.nm[i]+'</span></button>').join('');$('chips').querySelectorAll('canvas').forEach(k=>icon(k,k.dataset.k));$('chips').querySelectorAll('button').forEach(b=>b.onclick=()=>{sh=b.dataset.k;rch()})}
-function ans(k){fl.v=1;EV[V]();if((V===2||V===5)&&!play){U=true;play=true;$('play').textContent='Ⅱ Pause'}}
+function rch(){const s=SC[V],l=s.ch;$('chips').innerHTML=l.map((k,i)=>'<button type="button" class="chip'+(k===sh?' on':'')+'" data-k="'+k+'"><canvas width="72" height="72" data-k="'+k+'" aria-hidden="true"></canvas><span>'+s.nm[i]+'</span></button>').join('');$('chips').querySelectorAll('canvas').forEach(k=>icon(k,k.dataset.k));$('chips').querySelectorAll('button').forEach(b=>b.onclick=()=>{if(fl.pz)fl.pz=fl.pz.filter(x=>x!==b.dataset.k);sh=b.dataset.k;rch()});(fl.pz||[]).forEach(kz=>{const z=$('chips').querySelector('.chip[data-k="'+kz+'"]');if(z)z.classList.add('pz')})}
+function aSw(){let t=null;fl.pz=null;if(V===1){t=['circle','square','lens',null][A.p1];if(A.p1===3)t=(sh==='circle'||!SC[1].ch.some(x=>sg(x)>0))?'square':sh;fl.pz=A.p1===0?['square','lens']:A.p1===1?['lens']:A.p1===2?['square']:null}else if(V===2){t=A.p2===0?'square':A.p2===1?'triangle':null;fl.pz=A.p2===0?['triangle']:A.p2===2?[sh==='square'?'triangle':'square']:null}if(t&&t!==sh)sh=t;rch();if((V===1||V===2||V===5)&&!play){U=true;play=true;$('play').textContent='Ⅱ Pause'}}
+function ans(k){fl.v=1;EV[V]();aSw()}
 function upd(){
- if(V===6&&sg('mix')>=6.3&&!fl.done){fl.done=1;setNext(1);showKey(6)}}
+ if(V===6&&!fl.done&&performance.now()-T6>=2000){fl.done=1;setNext(1);showKey(6)}}
 const S_=t=>SS[t]||(SS[t]={a:startA(t),dist:0,gnd:0});
 function fit(){cv.style.height=V===4?(innerWidth<700?'260px':'400px'):''}
 window.addEventListener('resize',fit);
@@ -409,8 +410,8 @@ const mkOf=t=>t==='circle'?(V===1?'full':'rim'):'';
 function scene(t,x0,y0,pw,ph,W,panel){const st=S_(t),bw=Math.min(pw-(panel?90:70),560),k=Math.min(ph*.4/20,(bw-50)/2/31),gr=ph*.84,u=inf(t).u,R=20/u*k,b=bnd(t,st.a),sp2=Math.min(k*31,(bw-50)/2),off=(((st.dist*R)%sp2)+sp2)%sp2,by=gr-R*b.w,cx=x0+pw/2,w=b.w*20/u,sft=(((st.gnd*R)%34)+34)%34;
  c.save();c.beginPath();c.rect(x0,y0,pw,ph);c.clip();c.translate(0,y0);ground(W,ph,gr,sft);
  for(let i=-6;i<=6;i++){const x=cx+i*sp2-off;if(x<x0-R*1.7||x>x0+pw+R*1.7)continue;shape(t,x,gr-R*b.hi,st.a,R,mkOf(t))}
- if(V===3&&!panel&&covA>.01){const L=x0-2,Rr=x0+pw+2,T0=by-2,Tp=T0+(gr-T0)*(1-covA),Hh=gr-1-Tp;if(Hh>2){c.save();c.beginPath();c.roundRect(L,Tp,Rr-L,Hh,10);c.fillStyle='#151b38';c.fill();c.clip();c.strokeStyle='rgba(200,205,234,.16)';c.lineWidth=1.4;for(let xx=L-Hh;xx<Rr;xx+=14){c.beginPath();c.moveTo(xx,gr);c.lineTo(xx+Hh,Tp);c.stroke()}c.restore();c.save();c.setLineDash([6,5]);c.strokeStyle='rgba(200,205,234,.5)';c.lineWidth=1.3;c.beginPath();c.moveTo(L,Tp);c.lineTo(L,gr-1);c.lineTo(Rr,gr-1);c.lineTo(Rr,Tp);c.stroke();c.restore();
-  if(Hh>50){const ex=(L+Rr)/2,ey=Tp+Hh/2,s=1.2;c.save();c.strokeStyle='rgba(225,228,245,.85)';c.lineWidth=2.2;c.lineCap='round';c.beginPath();c.moveTo(ex-22*s,ey);c.quadraticCurveTo(ex,ey-20*s,ex+22*s,ey);c.quadraticCurveTo(ex,ey+20*s,ex-22*s,ey);c.stroke();c.beginPath();c.arc(ex,ey,6*s,0,7);c.stroke();c.beginPath();c.moveTo(ex-16*s,ey+14*s);c.lineTo(ex+16*s,ey-14*s);c.stroke();c.restore()}}}
+ if(V===3&&!panel&&covA>.01){const L=x0-2,Rr=x0+pw+2,T0=by-2,Tp=T0+(gr-T0)*(1-covA),Hh=gr-1-Tp;if(Hh>2){c.save();c.beginPath();c.roundRect(L,Tp,Rr-L,Hh,10);c.fillStyle='#151b38';c.fill();c.clip();for(let i=-6;i<=6;i++){const bx=cx+i*sp2-off,byy=gr-R*b.hi,g=c.createRadialGradient(bx,byy,R*.15,bx,byy,R*1.05);g.addColorStop(0,'rgba(4,6,18,.7)');g.addColorStop(1,'rgba(4,6,18,0)');c.fillStyle=g;c.beginPath();c.arc(bx,byy,R*1.05,0,7);c.fill()}c.strokeStyle='rgba(200,205,234,.16)';c.lineWidth=1.4;for(let xx=L-Hh;xx<Rr;xx+=14){c.beginPath();c.moveTo(xx,gr);c.lineTo(xx+Hh,Tp);c.stroke()}c.restore();c.save();c.setLineDash([6,5]);c.strokeStyle='rgba(200,205,234,.5)';c.lineWidth=1.3;c.beginPath();c.moveTo(L,Tp);c.lineTo(L,gr-1);c.lineTo(Rr,gr-1);c.lineTo(Rr,Tp);c.stroke();c.restore();
+  if(Hh>50&&A.p3===undefined){const ex=(L+Rr)/2,ey=Tp+Hh/2;c.save();c.textAlign='center';c.fillStyle='rgba(255,255,255,.95)';c.font='700 21px system-ui,sans-serif';c.fillText('The rolling shapes are hidden!',ex,ey-4);c.fillStyle='#c8cdea';c.font='500 16px system-ui,sans-serif';c.fillText('Make your choice below.',ex,ey+22);c.restore()}else if(Hh>50){const ex=(L+Rr)/2,ey=Tp+Hh/2,s=1.2;c.save();c.strokeStyle='rgba(225,228,245,.85)';c.lineWidth=2.2;c.lineCap='round';c.beginPath();c.moveTo(ex-22*s,ey);c.quadraticCurveTo(ex,ey-20*s,ex+22*s,ey);c.quadraticCurveTo(ex,ey+20*s,ex-22*s,ey);c.stroke();c.beginPath();c.arc(ex,ey,6*s,0,7);c.stroke();c.beginPath();c.moveTo(ex-16*s,ey+14*s);c.lineTo(ex+16*s,ey-14*s);c.stroke();c.restore()}}}
  c.fillStyle=K.acc;c.beginPath();c.roundRect(cx-bw/2,by-12,bw,12,4);c.fill();man(cx,by-12,Math.min(1,k/5.2));
  c.save();c.setLineDash([6,5]);c.lineDashOffset=st.gnd*R-x0;ln(x0,gr-20*k,x0+pw,gr-20*k,K.mut,1.3);c.restore();arrow(cx+bw/2-24,by,gr,f(w)+' cm');
  const r=sg(t)>=TH?rg[t]:null;
@@ -432,11 +433,11 @@ const NM2={circle:'circles',square:'squares',lens:'lenses',triangle:'triangles'}
 function todo(){let t='';const rest=()=>SC[V].ch.filter(x=>sg(x)<TH).map(x=>NM2[x]);
  if(V===1){t='Roll each shape and watch the board.'}
  else if(V===2){t='Roll the squares and the triangles. Compare how the board moves.'}
- else if(V===4){const n=(fl.st||[]).length;t=n<3?'Roll the shape to the right: '+n+' of 3 outlines':'Done ✓';const m=$('mtd');if(m)m.classList.toggle('hidden',n<3||!!fl.v)}
+ else if(V===4){const n=(fl.st||[]).length;t=n<3?'Roll the shape to the right: '+n+' of 3 outlines. Then use the ruler.':'3 of 3 outlines ✓ Now use the ruler.'}
  
  else if(V===6)t=fl.done?'':'Watch the shapes roll…';
  const e=$('todo');if(e.textContent!==t)e.textContent=t;e.classList.toggle('hidden',!t)}
-let last=0;function fr(t){const dt=Math.min((t-last)/1000,.05);last=t;if(cxT)drawCX(dt);if(play&&U)rot(dt*1.3);covA+=((V===3&&!fl.rev?1:0)-covA)*Math.min(1,dt*4);todo();draw();requestAnimationFrame(fr)}
+let last=0;function fr(t){const dt=Math.min((t-last)/1000,.05);last=t;if(cxT)drawCX(dt);if(play&&U)rot(dt*1.3);covA+=((V===3&&!fl.rev?1:0)-covA)*Math.min(1,dt*4);if(V===3&&fl.sw&&covA>.99){const o=S_(sh),d=bnd(sh,o.a).w*20/inf(sh).u-20;if(Math.abs(d)<.15||(fl.sd&&Math.sign(d)!==fl.sd)){const f=inf('circle').u/inf(sh).u,cc=S_('circle');cc.dist=o.dist*f;cc.gnd=o.gnd*f;sh='circle';fl.sw=0}else fl.sd=Math.sign(d)}todo();draw();requestAnimationFrame(fr)}
 function renderFb(html,cls,head){const e=$('fb');let h=head;if(!h){if(cls==='ok')h='Nice work!';else if(cls==='warn')h=(fl.e||1)<=1?'Take another look!':'Here\'s a hint!';else h=''}
  e.innerHTML='<span class="fbi"></span><div class="fbt">'+(h?'<b class="fh">'+h+'</b>':'')+'<div>'+html+'</div></div><button type="button" class="pri fbn">'+$('next').textContent+'</button>';e.className='fb '+cls;syncFb()}
 function syncFb(){const b=document.querySelector('#fb .fbn'),f=$('fb');if(b){b.classList.toggle('hidden',$('next').disabled);b.textContent=$('next').textContent;b.onclick=()=>{if(!$('next').disabled)$('next').click()}}document.body.classList.toggle('fbon',!!b&&!$('next').disabled&&!f.classList.contains('hidden'))}
@@ -467,7 +468,7 @@ function rollTo(a){rA=Math.max(0,Math.min(AMX,a));PZ.forEach((p,i)=>{fl.st=fl.st
 function onFig(x,y){const g=rGeom(cv.clientWidth,cv.clientHeight),[fx,fy]=rPos(g,rA);return Math.hypot(x-fx,y-fy)<g.R*1.05}
 function posH(){const h=document.querySelector('.hin2');if(!h||V!==4)return;const g=rGeom(cv.clientWidth,cv.clientHeight),cr=cv.getBoundingClientRect(),hr=h.getBoundingClientRect();h.querySelectorAll('.hcol').forEach(e=>{const i=+e.dataset.i,[x]=rPos(g,PZ[i]);e.style.left=(cr.left-hr.left+x)+'px';e.classList.toggle('got',(fl.st||[]).includes(i))})}
 addEventListener('resize',()=>requestAnimationFrame(posH));
-function askH(){const q=$('q');q.className='hq';q.innerHTML='<legend>How tall is the shape in each position?</legend><p id="mtd" class="todo mtd hidden">Measure each one with the ruler.</p><div class="hin2">'+[0,1,2].map(i=>'<label class="hcol" data-i="'+i+'"><span class="hm"><svg width="14" height="12" viewBox="0 0 14 12"><path d="M7 0 14 12H0z"/></svg><b>'+(i+1)+'</b></span><span class="hf"><input id="h'+i+'" inputmode="decimal" autocomplete="off" aria-label="Position '+(i+1)+', height in cm"><span class="u">cm</span></span></label>').join('')+'<button type="button" class="sec" id="hck">Check</button></div>';q.classList.remove('hidden');requestAnimationFrame(posH);
+function askH(){const q=$('q');q.className='hq';q.innerHTML='<legend>How tall is the shape in each position?</legend><div class="hin2">'+[0,1,2].map(i=>'<label class="hcol" data-i="'+i+'"><span class="hm"><svg width="14" height="12" viewBox="0 0 14 12"><path d="M7 0 14 12H0z"/></svg><b>'+(i+1)+'</b></span><span class="hf"><input id="h'+i+'" inputmode="decimal" autocomplete="off" aria-label="Position '+(i+1)+', height in cm"><span class="u">cm</span></span></label>').join('')+'<button type="button" class="sec" id="hck">Check</button></div>';q.classList.remove('hidden');requestAnimationFrame(posH);
  [0,1,2].forEach(i=>{$('h'+i).oninput=()=>{fl['h'+i]=$('h'+i).value;saveSt()};$('h'+i).onkeydown=e=>{if(e.key==='Enter')checkH()}});$('hck').onclick=checkH}
 function numOf(v){v=String(v||'').trim().replace(/\s*cm$/i,'').replace(',','.');return /^\d+(\.\d+)?$/.test(v)?+v:NaN}
 function doneH(){$('q').querySelectorAll('input,button').forEach(x=>x.disabled=true)}
@@ -498,12 +499,12 @@ function okfb(m,cls){const ok=cls==='ok';document.querySelectorAll('.opt').forEa
 function startScreen(){try{if(LS.getItem('cw-en-go1')){LS.removeItem('cw-en-go1');return 1}}catch(e){}const d=ld();return d&&d<N&&cs?Math.min(cs,N):1}
 function liftQ(){const t=$('t'),q=$('q'),lg=q.querySelector('legend'),s=SC[V]||{};if(!t)return;if(lg&&lg.childNodes.length&&!q.classList.contains('hidden'))t.replaceChildren(...lg.childNodes);else t.innerHTML=s.h||s.t||''}
 function liftT(){const td=$('todo'),st=$('stage');if(td&&st&&!$('q').contains(td))st.before(td)}
-let covA=1;
-{const _g=go;go=function(k){if(k===3){covA=1;}_g(k);if(k){liftQ();liftT();if(k===3&&!play){play=true;$('play').textContent='Ⅱ Pause'}}}}
+let covA=1,T6=0;
+{const _g=go;go=function(k){if(k===3){covA=1;}_g(k);if(k){liftQ();liftT();if(k===3&&!play){play=true;$('play').textContent='Ⅱ Pause'}if(k===6)T6=performance.now();}}}
 requestAnimationFrame(fr);go(startScreen());
 <\/script></body></html></script>
 <script type="text/plain" id="L2"><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Shapes of Constant Width – Lesson 2</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Shapes of Constant Width (EN)_final</title>
 <style>
 :root{--bg:#f7f8fc;--card:#fff;--ink:#10152f;--mut:#626986;--line:#dce0ec;--acc:#1738e8;--accbg:#eef1ff;--gr:#eef1ff;--ok:#e6ffb3;--okb:#8bc923;--warn:#fff2df;--warnb:#ed8a31;--lime:#dfff54;--coral:#ff6b52;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1226;--card:#181c38;--ink:#eef0ff;--mut:#9aa2c8;--line:#2a3060;--acc:#8fa1ff;--accbg:#232a5c;--gr:#1d2248;--ok:#223d12;--okb:#6aa31e;--warn:#40290f;--warnb:#d98129;color-scheme:dark}}
@@ -695,17 +696,35 @@ main .ctl{margin-bottom:14px!important}
 .key b i.knx small{display:block;letter-spacing:3px;font-size:11px;color:#8fa1ff;margin-bottom:4px}
 .trow .qh{flex:1;min-width:0}
 #lesson .trow h1#t{font-size:clamp(22px,2.4vw,28px)!important;font-weight:650!important;letter-spacing:-.2px!important;line-height:1.28!important;margin:0!important}
-#t b,#t .hl{color:#dfff54;font-weight:inherit}#t .oic{vertical-align:-8px}#t .oic canvas{width:36px!important;height:36px!important}
+#t b,#t .hl{color:#dfff54;font-weight:inherit}#t .oic{vertical-align:-6px;line-height:0}#t .oic canvas{width:32px!important;height:32px!important}
 .qh .lead{margin:0 0 6px!important;font-size:17px!important}.qh .lead.sub{margin:8px 0 0!important}
 #q>legend{display:none!important}
-.trow{position:relative}.trow .prg{position:absolute!important;right:0;top:0}.trow .qh{width:100%}
+.trow{position:relative}.trow .prg{position:absolute!important;right:0;top:0}.trow .qh{width:100%;padding-top:26px;box-sizing:content-box}
 #q .opt{padding-right:46px!important}#q.thq .opt{padding-left:46px!important}
 #lesson>#todo{margin:6px 0 12px!important;flex:none!important;min-height:0}
 .sll{color:#ff6b52!important}.sll b{color:#ff6b52!important}.slrow input[type=range]{accent-color:#ff6b52!important}
-#row4{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;height:32px}#row4>#todo{flex:1;margin:0 0 12px!important}#ctl4{margin:0;display:flex;align-items:center;gap:14px}#ctl4 .sll{margin:0!important;white-space:nowrap}#ctl4 .slrow{margin:0!important}
+#ctl4{position:absolute;top:12px;right:14px;z-index:3;display:flex;align-items:center;gap:12px;background:rgba(18,22,52,.88);padding:6px 12px;border-radius:12px}#rdw{position:absolute;right:12px;bottom:12px;z-index:3}#ctl4 .sll{margin:0!important;white-space:nowrap}#ctl4 .slrow{margin:0!important}
 .nb{margin:4px 0 10px!important}
-.trow{align-items:flex-start}.trow .qh{display:flex;flex-direction:column;justify-content:flex-end;min-height:68px}.trow .qh #t{flex:none!important}
+.trow{align-items:flex-start}.trow .qh{display:flex;flex-direction:column;justify-content:flex-end;min-height:36px}.trow .qh #t{flex:none!important}
 #lesson>#todo,#row4>#todo{min-height:20px}#lesson>#todo.hidden,#row4>#todo.hidden{display:block!important;visibility:hidden}
+#e5 .e5g{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#e5 .e5p{display:flex;flex-direction:column;gap:8px;min-width:0}
+#e5 .e5st{position:relative;margin:0 0 10px}
+#e5 .e5st canvas{display:block;width:100%;height:380px;touch-action:none}
+#e5 .e5r{position:absolute;right:12px;top:12px;z-index:2}
+#e5 .e5q{text-align:center;font-size:14px;font-weight:700;color:#c8cdea;margin:2px 0 10px}
+#e5 .e5o{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:60%;margin:0 auto;padding:0 0 16px}
+#e5 .e5o .opt{width:100%;text-align:center!important;justify-content:center;padding:8px 40px!important;min-height:0!important}
+#e5 .e5o .e5wide{grid-column:1/-1}
+.e5n{display:none}
+@media(max-width:700px){#e5 .e5o{width:78%}#e5 .e5g{grid-template-columns:1fr;gap:30px}#e5 .e5st canvas{height:330px}.e5w{display:none}.e5n{display:inline}}
+#e5 .e5p>.fb{margin:2px 0 0!important}#e5 .e5p>.fb.hidden{display:none!important}
+#e6 .e6st{position:relative;margin:0}
+#e6 .e6st canvas{display:block;width:100%;height:470px;touch-action:none}
+#e6 .pbs{position:absolute;right:14px;top:14px;display:flex;gap:10px;z-index:2}#e6 .pbs.hidden{display:none}
+#e6 .pp2{background:#151a3d;color:#eef0ff;border:2px solid #2a3060;border-radius:14px;padding:8px 16px;font:700 14px "Nunito Sans",Inter,sans-serif;cursor:pointer}#e6 .pp2:hover{border-color:#9aa5ff}
+#e6 .pp{background:#9aa5ff;color:#10152f;border:0;border-radius:14px;padding:10px 22px;font:700 15px "Nunito Sans",Inter,sans-serif;cursor:pointer}#e6 .pp.hidden{display:none}
+@media(max-width:700px){#e6 .e6st canvas{height:400px}#e6 .pp2{padding:6px 10px;font-size:13px}#e6 .pp{padding:8px 14px;font-size:14px}}
 </style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet"></head><body class="dk">
 <header><div class="brand"><span class="lnum">02</span><span>Shapes of Constant Width</span><span id="ht">A Compass and a New Shape</span></div><div class="hrt"><button type="button" class="hb" id="hb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Home</button></div></header>
 <main>
@@ -715,7 +734,7 @@ main .ctl{margin-bottom:14px!important}
 <div id="sort" class="hidden"></div>
 <div class="bar" id="bar"><button class="sec" id="play">▶ Play</button><span id="hint"></span><button class="sec hidden" id="act"></button></div>
 <p id="todo" class="todo hidden" role="status" aria-live="polite"></p>
-<fieldset id="q" class="hidden"></fieldset><div id="fb" class="fb hidden" role="status"></div>
+<div id="e5" class="hidden"></div><div id="e6" class="hidden"></div><fieldset id="q" class="hidden"></fieldset><div id="fb" class="fb hidden" role="status"></div>
 <div id="key" class="key hidden"><div class="ki" id="ki"></div><div><small id="ks"></small><b id="kb"></b></div></div>
 <div class="nav"><button id="back">← Back</button><button id="next" class="pri">Continue ›</button></div>
 </section>
@@ -740,8 +759,8 @@ const SC=[null,
 {t:'Put the shapes to the test',h:'Some of these shapes have constant width. Which ones?'},
 {t:'Build a shape from three arcs'},
 {t:'Find the right compass opening'},
-{t:'Compare two segments'},
-{t:'Why is the width constant?'}];
+{t:'Compare two segments',h:'Which segment is <span class="hl">longer</span>, red or blue?'},
+{t:'Why is the width constant?',ld:'Explore the Reuleaux triangle in three positions.',h:'The red arc is part of a circle. Where is its <span class="hl">center</span>?'}];
 const SO=[['p12','Regular 12-gon'],['reuleaux','Reuleaux triangle'],['rtri','Rounded triangle']];
 const mi=t=>String(t).replace(/\[(.*?)\]/g,'<i class="mi">$1</i>').replace(/\{(.*?)\}/g,'<b class="hl">$1</b>');
 const setFb=(m,cls,hd)=>{lastFb={m,cls,hd};const e=$('fb');e.innerHTML='<span>'+mi(m)+'</span>';e.className='fb '+cls;renderFb(e.innerHTML,cls,hd);okfb(m,cls);if(!ld2)saveSt()};
@@ -754,29 +773,29 @@ function ask4(){ask('p','Which segment is longer?',['Segment [AP].','Segment [AQ
 const f2=x=>x.toFixed(2);
 const qn=v=>'qr'+(v/20).toFixed(4);
 function cGeo(W,H){const L=Math.min((H-64)/1.62,W*.36),cx=W/2,G=[cx,H*.5+18],Rpx=L/S3,V3=[0,2,1].map(i=>poly(3,-PI/2)[i]).map(p=>[G[0]+p[0]*Rpx,G[1]+p[1]*Rpx]);return{L,V3,G,Rpx}}
-function startChk(){fl.chk=1;fl.jaws=1;if(fl.r===20){fl.v=1;setNext(1);setFb('','ok','You got it!');showKey(4)}else setFb(HINT('With this opening, the width isn\'t constant. Try another value.','Compare the compass opening with the triangle\'s side length.'),'warn');barUI();saveSt()}
-function slider3(){const q=$('q');q.className='slq';q.innerHTML='<legend>Which compass opening gives the shape constant width?</legend><div class="sll">Compass opening: <b id="rv"></b></div><div class="slrow"><input type="range" id="rsl" min="15" max="22" step="1" aria-label="Compass opening"></div>';q.classList.remove('hidden');const e=$('rsl');e.value=fl.r;$('rv').textContent=fl.r+' cm';
+function startChk(){fl.chk=1;fl.jaws=1;if(fl.r===20){fl.v=1;setNext(1);setFb('','ok','You got it!');showKey(4)}else{$('key').classList.add('hidden');{const n=fl.e=(fl.e||0)+1;setFb(n===1?'This shape doesn\'t have constant width. Try another opening.':'Watch the distance between the boards as the shape turns. Does it stay the same?','warn',n===1?'-':'')}}barUI();saveSt()}
+function slider3(){const q=$('q');q.className='slq';q.innerHTML='<legend>Which compass opening makes a shape of constant width?</legend><div class="sll">Compass opening: <b id="rv"></b></div><div class="slrow"><input type="range" id="rsl" min="15" max="22" step="1" aria-label="Compass opening"></div>';q.classList.remove('hidden');const e=$('rsl');e.value=fl.r;$('rv').textContent=fl.r+' cm';
  e.addEventListener('pointerdown',()=>{if(play){play=false;$('play').textContent='▶ Play'}});
  e.oninput=()=>{clearTimeout(T4);fl.r=+e.value;$('rv').textContent=fl.r+' cm';sh=qn(fl.r);fl.chk=0;fl.jaws=1;fl.cd=0;play=false;U=true;ang=0;sp={};rg={};$('play').textContent='▶ Play';if(!fl.v)hideFb();barUI();saveSt()}}
 function pill(t,x,y,col){c.font='700 15px system-ui';const w=c.measureText(t).width;c.fillStyle='rgba(13,16,40,.86)';c.beginPath();c.roundRect(x-w/2-6,y-12,w+12,24,6);c.fill();c.fillStyle=col;c.textAlign='center';c.textBaseline='middle';c.fillText(t,x,y+1);c.textBaseline='alphabetic'}
 const RDIR=0;
 function radL(VV,T,Pq,r){const o=VV[0],C0=T([0,0]),ph=Math.atan2(C0[1]-o[1],C0[0]-o[0]);
- {const P=Pq.map(T),n=P.length,on=P.map(p=>Math.abs(Math.hypot(p[0]-o[0],p[1]-o[1])-r)<Math.max(1.2,r*.004));let st=on.findIndex(v=>!v);if(st<0)st=0;c.save();c.strokeStyle=K.coral;c.lineWidth=4.5;c.lineCap='round';c.lineJoin='round';let dr=false;for(let k=1;k<=n;k++){const i=(st+k)%n;if(on[i]){if(!dr){c.beginPath();c.moveTo(P[i][0],P[i][1]);dr=true}else c.lineTo(P[i][0],P[i][1])}else if(dr){c.stroke();dr=false}}if(dr)c.stroke();c.restore()}
- const E=[o[0]+r*Math.cos(ph),o[1]+r*Math.sin(ph)];ln(o[0],o[1],E[0],E[1],K.coral,3.5);dot(E[0],E[1],5,K.coral);dot(o[0],o[1],6.5,K.coral);
+ {const P=Pq.map(T),n=P.length,on=P.map(p=>Math.abs(Math.hypot(p[0]-o[0],p[1]-o[1])-r)<Math.max(1.2,r*.004));let st=on.findIndex(v=>!v);if(st<0)st=0;c.save();c.setLineDash([7,6]);c.strokeStyle=K.coral;c.lineWidth=2.6;c.lineCap='butt';c.lineJoin='round';let dr=false;for(let k=1;k<=n;k++){const i=(st+k)%n;if(on[i]){if(!dr){c.beginPath();c.moveTo(P[i][0],P[i][1]);dr=true}else c.lineTo(P[i][0],P[i][1])}else if(dr){c.stroke();dr=false}}if(dr)c.stroke();c.restore()}
+ const E=[o[0]+r*Math.cos(ph),o[1]+r*Math.sin(ph)];ln(o[0],o[1],E[0],E[1],K.coral,3.5);dot(o[0],o[1],4.5,'#fff');dot(E[0],E[1],5,K.coral);c.strokeStyle='#fff';c.lineWidth=1.5;c.beginPath();c.arc(E[0],E[1],5,0,7);c.stroke();
  const px=-Math.sin(ph),py=Math.cos(ph),sg2=px<0?-1:1;pill((V===3?15:fl.r||15)+' cm',(o[0]+E[0])/2+px*sg2*34,(o[1]+E[1])/2+py*sg2*34,K.coral);
  sideP(VV)}
-function sideP(VV){const o=VV[0],B=VV[1],Cc=VV[2],mx=B[0]+(Cc[0]-B[0])*.76,my=B[1]+(Cc[1]-B[1])*.76,dx=mx-o[0],dy=my-o[1],n=Math.hypot(dx,dy)||1;pill('20 cm',mx+dx/n*16,my+dy/n*16,'#c8cdea')}
-function con3(W,H){lab('','','');const{L,G,Rpx}=cGeo(W,H),r=(V===3?15:fl.r||15)/20*L,done=ar.every(x=>x>=1),Pq=pts(sh),chk=V===4,b0=bnd(sh,0),gr=G[1]+b0.hi*Rpx,b=chk?bnd(sh,ang):b0,a=chk?ang:0,cx=G[0],cy=gr-b.hi*Rpx,top=gr-b.w*Rpx,top0=gr-b0.w*Rpx;
+function sideP(VV){const o=VV[0],B=VV[1],Cc=VV[2],tt=V===3?.5:.76,mx=B[0]+(Cc[0]-B[0])*tt,my=B[1]+(Cc[1]-B[1])*tt,dx=mx-o[0],dy=my-o[1],n=Math.hypot(dx,dy)||1;pill('20 cm',mx+dx/n*16,my+dy/n*16,'#c8cdea')}
+let cA=1,cAt=0;function con3(W,H){lab('','','');{const nw=performance.now(),dd=Math.min(.1,(nw-cAt)/1000);cAt=nw;cA+=((V===4&&play?0:1)-cA)*Math.min(1,dd*7)}const{L,G,Rpx}=cGeo(W,H),r=(V===3?15:fl.r||15)/20*L,done=ar.every(x=>x>=1),Pq=pts(sh),chk=V===4,b0=bnd(sh,0),gr=G[1]+b0.hi*Rpx,b=chk?bnd(sh,ang):b0,a=chk?ang:0,cx=G[0],cy=gr-b.hi*Rpx,top=gr-b.w*Rpx,top0=gr-b0.w*Rpx;
  const T=p=>{const s=Math.sin(a),q=Math.cos(a);return[cx+(p[0]*q-p[1]*s)*Rpx,cy+(p[0]*s+p[1]*q)*Rpx]},VV=[0,2,1].map(i=>poly(3,-PI/2)[i]).map(T);
  if(done){c.beginPath();Pq.forEach((p,i)=>{const t=T(p);i?c.lineTo(t[0],t[1]):c.moveTo(t[0],t[1])});c.closePath();c.fillStyle=K.lime;c.fill()}
- c.beginPath();VV.forEach((p,i)=>i?c.lineTo(p[0],p[1]):c.moveTo(p[0],p[1]));c.closePath();c.strokeStyle=done?'#59639a':K.mut;c.lineWidth=1.3;c.stroke();
- VV.forEach((o,i)=>{if(ar[i]<=0)return;const C=T([0,0]),phi=Math.atan2(C[1]-o[1],C[0]-o[0]),a0=phi-.8;c.beginPath();c.arc(o[0],o[1],r,a0,a0+1.6*ar[i]);c.strokeStyle='#fff';c.globalAlpha=done?.45:1;c.lineWidth=2.2;c.stroke();c.globalAlpha=1});
+ c.save();c.globalAlpha=cA;c.beginPath();VV.forEach((p,i)=>i?c.lineTo(p[0],p[1]):c.moveTo(p[0],p[1]));c.closePath();c.strokeStyle=done?'#59639a':K.mut;c.lineWidth=1.3;c.stroke();c.restore();
+ VV.forEach((o,i)=>{if(ar[i]<=0)return;const C=T([0,0]),phi=Math.atan2(C[1]-o[1],C[0]-o[0]),a0=phi-.8;c.beginPath();c.arc(o[0],o[1],r,a0,a0+1.6*ar[i]);c.strokeStyle='#fff';c.globalAlpha=(done?.45:1)*cA;c.lineWidth=2.2;c.stroke();c.globalAlpha=1});
  if(cur>=0){const o=VV[cur],C=T([0,0]),phi=Math.atan2(C[1]-o[1],C[0]-o[0]),aa=phi-.8+1.6*ar[cur],px=o[0]+r*Math.cos(aa),py=o[1]+r*Math.sin(aa);ln(o[0],o[1],px,py,K.coral,3);dot(px,py,5,K.coral)}
  if(done){c.save();c.beginPath();Pq.forEach((p,i)=>{const t=T(p);i?c.lineTo(t[0],t[1]):c.moveTo(t[0],t[1])});c.closePath();c.clip();c.strokeStyle='#fff';c.lineWidth=5;c.lineJoin='round';c.stroke();c.restore()}
- VV.forEach((p,i)=>{const hl=V===3&&fl.dq&&i===nxt&&cur<0&&nxt<3;if(hl){c.strokeStyle=K.coral;c.lineWidth=3;c.beginPath();c.arc(p[0],p[1],15,0,7);c.stroke()}dot(p[0],p[1],hl?7:4.5,hl?K.coral:'#fff');const C=T([0,0]),dx=p[0]-C[0],dy=p[1]-C[1],n=Math.hypot(dx,dy)||1;{const lx2=p[0]+dx/n*16,ly2=p[1]+dy/n*16+5;c.save();c.font=SER;c.textAlign='center';c.lineWidth=4;c.lineJoin='round';c.strokeStyle='rgba(13,16,40,.9)';c.strokeText('ABC'[i],lx2,ly2);c.restore();txt('ABC'[i],lx2,ly2,SER,'#fff')}});
+ c.save();c.globalAlpha=cA;VV.forEach((p,i)=>{const hl=V===3&&fl.dq&&i===nxt&&cur<0&&nxt<3;if(hl){c.strokeStyle=K.coral;c.lineWidth=3;c.beginPath();c.arc(p[0],p[1],15,0,7);c.stroke()}dot(p[0],p[1],hl?7:4.5,hl?K.coral:'#fff');const C=T([0,0]),dx=p[0]-C[0],dy=p[1]-C[1],n=Math.hypot(dx,dy)||1;{const lx2=p[0]+dx/n*16,ly2=p[1]+dy/n*16+5;c.save();c.font=SER;c.textAlign='center';c.lineWidth=4;c.lineJoin='round';c.strokeStyle='rgba(13,16,40,.9)';c.strokeText('ABC'[i],lx2,ly2);c.restore();txt('ABC'[i],lx2,ly2,SER,'#fff')}});c.restore();
  if(chk){const Lb=Math.min(W-80,34*L/20),e=1-Math.pow(1-Math.min(mo,1),3);c.save();c.globalAlpha=e;c.setLineDash([6,5]);ln(cx-Lb/2-20,top0,cx+Lb/2+20,top0,'rgba(200,205,234,.6)',1.3);c.setLineDash([]);c.fillStyle=K.acc;c.beginPath();c.roundRect(cx-Lb/2,top-9,Lb,9,3);c.fill();c.beginPath();c.roundRect(cx-Lb/2,gr,Lb,9,3);c.fill();c.restore();arrow(cx+Lb/2-14,top,gr,'')}
  const sc=L/20,lx=W<500?14:36,dim=(x1,x2,y,col,t)=>{ln(x1,y,x2,y,col,2.5);ln(x1,y-6,x1,y+6,col,2);ln(x2,y-6,x2,y+6,col,2);c.font='600 13px system-ui';c.textAlign='left';c.fillStyle=col;c.fillText(t,x1,y-12)};
- const y1=H-58,y2=H-14;if(V===4&&done){if(!play)radL(VV,T,Pq,r)}else if(V===3){if(done)radL(VV,T,Pq,r);else{sideP(VV);if(cur>=0){const o=VV[cur],C2=T([0,0]),ph2=Math.atan2(C2[1]-o[1],C2[0]-o[0]),aa=ph2-.8+1.6*ar[cur],ex=o[0]+r*Math.cos(aa),ey=o[1]+r*Math.sin(aa),px=-(ey-o[1])/r,py=(ex-o[0])/r;pill('15 cm',(o[0]+ex)/2+px*26,(o[1]+ey)/2+py*26,K.coral)}}}else{dim(lx,lx+20*sc,y1,'#c8cdea','triangle side: 20 cm');dim(lx,lx+(V===3?15:fl.r||15)*sc,y2,K.coral,'compass opening: '+(V===3?15:fl.r||15)+' cm')}
+ const y1=H-58,y2=H-14;if(V===4&&done){if(cA>.02){c.save();c.globalAlpha=cA;radL(VV,T,Pq,r);c.restore()}}else if(V===3){if(done)radL(VV,T,Pq,r);else{if(cur<0)sideP(VV);if(cur>=0){const o=VV[cur],C2=T([0,0]),ph2=Math.atan2(C2[1]-o[1],C2[0]-o[0]),aa=ph2-.8+1.6*ar[cur],ex=o[0]+r*Math.cos(aa),ey=o[1]+r*Math.sin(aa),px=-(ey-o[1])/r,py=(ex-o[0])/r;pill('15 cm',(o[0]+ex)/2+px*26,(o[1]+ey)/2+py*26,K.coral)}}}else{dim(lx,lx+20*sc,y1,'#c8cdea','triangle side: 20 cm');dim(lx,lx+(V===3?15:fl.r||15)*sc,y2,K.coral,'compass opening: '+(V===3?15:fl.r||15)+' cm')}
  if(chk){const w=b.w*20/S3,rr=rg[sh];c.textAlign='left';c.fillStyle=K.mut;c.font='700 10px system-ui';c.fillText('WIDTH',14,22);c.fillStyle=K.lime;c.font='700 26px system-ui';c.fillText(f2(w)+' cm',14,50);if(rr&&fl.cd){c.fillStyle=K.mut;c.font='11px system-ui';c.fillText(rr.hi-rr.lo<.005?'always '+f2(rr.lo)+' cm':'range: '+f2(rr.lo)+'–'+f2(rr.hi)+' cm',14,68)}}}
 const TH6=["<svg class=\"th6\" viewBox=\"-78 -64 156 106\" aria-hidden=\"true\"><circle cx=\"0.0\" cy=\"-46.2\" r=\"64.0\" fill=\"none\" stroke=\"#8c96c8\" stroke-width=\"1.3\" stroke-dasharray=\"4 4\" opacity=\".8\"/><circle cx=\"-40.0\" cy=\"23.1\" r=\"64.0\" fill=\"none\" stroke=\"#8c96c8\" stroke-width=\"1.3\" stroke-dasharray=\"4 4\" opacity=\".8\"/><circle cx=\"40.0\" cy=\"23.1\" r=\"64.0\" fill=\"none\" stroke=\"#8c96c8\" stroke-width=\"1.3\" stroke-dasharray=\"4 4\" opacity=\".8\"/><path d=\"M -19.5 -0.4 L -19.3 -0.9 L -19.1 -1.4 L -18.9 -1.9 L -18.7 -2.4 L -18.5 -2.9 L -18.2 -3.4 L -18.0 -4.0 L -17.8 -4.5 L -17.5 -5.0 L -17.3 -5.5 L -17.0 -6.0 L -16.8 -6.5 L -16.5 -7.0 L -16.2 -7.4 L -16.0 -7.9 L -15.7 -8.4 L -15.4 -8.9 L -15.1 -9.4 L -14.9 -9.9 L -14.6 -10.3 L -14.3 -10.8 L -14.0 -11.3 L -13.7 -11.8 L -13.4 -12.2 L -13.1 -12.7 L -12.7 -13.2 L -12.4 -13.6 L -12.1 -14.1 L -11.8 -14.5 L -11.4 -15.0 L -11.1 -15.4 L -10.8 -15.9 L -10.4 -16.3 L -10.1 -16.7 L -9.7 -17.2 L -9.4 -17.6 L -9.0 -18.0 L -8.7 -18.5 L -8.3 -18.9 L -7.9 -19.3 L -7.6 -19.7 L -7.2 -20.1 L -6.8 -20.6 L -6.4 -21.0 L -6.0 -21.4 L -5.6 -21.8 L -5.3 -22.2 L -4.9 -22.6 L -4.5 -22.9 L -4.1 -23.3 L -3.6 -23.7 L -3.2 -24.1 L -2.8 -24.5 L -2.4 -24.8 L -2.0 -25.2 L -1.6 -25.6 L -1.1 -25.9 L -0.7 -26.3 L -0.3 -26.6 L 0.3 -26.6 L 0.7 -26.3 L 1.1 -25.9 L 1.6 -25.6 L 2.0 -25.2 L 2.4 -24.8 L 2.8 -24.5 L 3.2 -24.1 L 3.6 -23.7 L 4.1 -23.3 L 4.5 -22.9 L 4.9 -22.6 L 5.3 -22.2 L 5.6 -21.8 L 6.0 -21.4 L 6.4 -21.0 L 6.8 -20.6 L 7.2 -20.1 L 7.6 -19.7 L 7.9 -19.3 L 8.3 -18.9 L 8.7 -18.5 L 9.0 -18.0 L 9.4 -17.6 L 9.7 -17.2 L 10.1 -16.7 L 10.4 -16.3 L 10.8 -15.9 L 11.1 -15.4 L 11.4 -15.0 L 11.8 -14.5 L 12.1 -14.1 L 12.4 -13.6 L 12.7 -13.2 L 13.1 -12.7 L 13.4 -12.2 L 13.7 -11.8 L 14.0 -11.3 L 14.3 -10.8 L 14.6 -10.3 L 14.9 -9.9 L 15.1 -9.4 L 15.4 -8.9 L 15.7 -8.4 L 16.0 -7.9 L 16.2 -7.4 L 16.5 -7.0 L 16.8 -6.5 L 17.0 -6.0 L 17.3 -5.5 L 17.5 -5.0 L 17.8 -4.5 L 18.0 -4.0 L 18.2 -3.4 L 18.5 -2.9 L 18.7 -2.4 L 18.9 -1.9 L 19.1 -1.4 L 19.3 -0.9 L 19.5 -0.4 L 19.7 0.2 L 19.9 0.7 L 20.1 1.2 L 20.3 1.7 L 20.5 2.3 L 20.7 2.8 L 20.9 3.3 L 21.0 3.8 L 21.2 4.4 L 21.4 4.9 L 21.5 5.5 L 21.7 6.0 L 21.8 6.5 L 22.0 7.1 L 22.1 7.6 L 22.2 8.2 L 22.4 8.7 L 22.5 9.2 L 22.6 9.8 L 22.7 10.3 L 22.8 10.9 L 22.9 11.4 L 23.0 12.0 L 23.1 12.5 L 23.2 13.1 L 22.9 13.6 L 22.4 13.8 L 21.9 14.0 L 21.4 14.1 L 20.8 14.3 L 20.3 14.5 L 19.8 14.7 L 19.2 14.8 L 18.7 15.0 L 18.2 15.2 L 17.6 15.3 L 17.1 15.5 L 16.6 15.6 L 16.0 15.8 L 15.5 15.9 L 14.9 16.0 L 14.4 16.2 L 13.9 16.3 L 13.3 16.4 L 12.8 16.5 L 12.2 16.6 L 11.7 16.7 L 11.1 16.8 L 10.6 16.9 L 10.0 17.0 L 9.5 17.1 L 8.9 17.2 L 8.4 17.3 L 7.8 17.3 L 7.2 17.4 L 6.7 17.5 L 6.1 17.5 L 5.6 17.6 L 5.0 17.6 L 4.5 17.7 L 3.9 17.7 L 3.3 17.7 L 2.8 17.8 L 2.2 17.8 L 1.7 17.8 L 1.1 17.8 L 0.6 17.8 L 0.0 17.8 L -0.6 17.8 L -1.1 17.8 L -1.7 17.8 L -2.2 17.8 L -2.8 17.8 L -3.3 17.7 L -3.9 17.7 L -4.5 17.7 L -5.0 17.6 L -5.6 17.6 L -6.1 17.5 L -6.7 17.5 L -7.2 17.4 L -7.8 17.3 L -8.4 17.3 L -8.9 17.2 L -9.5 17.1 L -10.0 17.0 L -10.6 16.9 L -11.1 16.8 L -11.7 16.7 L -12.2 16.6 L -12.8 16.5 L -13.3 16.4 L -13.9 16.3 L -14.4 16.2 L -14.9 16.0 L -15.5 15.9 L -16.0 15.8 L -16.6 15.6 L -17.1 15.5 L -17.6 15.3 L -18.2 15.2 L -18.7 15.0 L -19.2 14.8 L -19.8 14.7 L -20.3 14.5 L -20.8 14.3 L -21.4 14.1 L -21.9 14.0 L -22.4 13.8 L -22.9 13.6 L -23.2 13.1 L -23.1 12.5 L -23.0 12.0 L -22.9 11.4 L -22.8 10.9 L -22.7 10.3 L -22.6 9.8 L -22.5 9.2 L -22.4 8.7 L -22.2 8.2 L -22.1 7.6 L -22.0 7.1 L -21.8 6.5 L -21.7 6.0 L -21.5 5.5 L -21.4 4.9 L -21.2 4.4 L -21.0 3.8 L -20.9 3.3 L -20.7 2.8 L -20.5 2.3 L -20.3 1.7 L -20.1 1.2 L -19.9 0.7 L -19.7 0.2 Z\" fill=\"#dfff54\" stroke=\"#fff\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"0.0\" y1=\"-46.2\" x2=\"0.0\" y2=\"17.8\" stroke=\"#ff6b52\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><line x1=\"-40.0\" y1=\"23.1\" x2=\"15.4\" y2=\"-8.9\" stroke=\"#ff6b52\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"23.1\" x2=\"-15.4\" y2=\"-8.9\" stroke=\"#ff6b52\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><circle cx=\"0.0\" cy=\"-46.2\" r=\"4.5\" fill=\"#ff6b52\" stroke=\"#fff\" stroke-width=\"1.5\"/><circle cx=\"-40.0\" cy=\"23.1\" r=\"4.5\" fill=\"#ff6b52\" stroke=\"#fff\" stroke-width=\"1.5\"/><circle cx=\"40.0\" cy=\"23.1\" r=\"4.5\" fill=\"#ff6b52\" stroke=\"#fff\" stroke-width=\"1.5\"/></svg>", "<svg class=\"th6\" viewBox=\"-75 -55 150 105\" aria-hidden=\"true\"><rect x=\"-62\" y=\"-47.4\" width=\"124\" height=\"6\" rx=\"2\" fill=\"#8fa1ff\"/><rect x=\"-62\" y=\"30.6\" width=\"124\" height=\"6\" rx=\"2\" fill=\"#8fa1ff\"/><path d=\"M 0.0 -40.4 A 70 70 0 0 1 35.0 20.2 A 70 70 0 0 1 -35.0 20.2 A 70 70 0 0 1 0.0 -40.4 Z\" fill=\"#dfff54\" stroke=\"#fff\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"0.0\" cy=\"-40.4\" r=\"5.5\" fill=\"#ffd166\" stroke=\"#fff\" stroke-width=\"1.5\"/></svg>", "<svg class=\"th6\" viewBox=\"-75 -55 150 105\" aria-hidden=\"true\"><rect x=\"-62\" y=\"-47.4\" width=\"124\" height=\"6\" rx=\"2\" fill=\"#8fa1ff\"/><rect x=\"-62\" y=\"30.6\" width=\"124\" height=\"6\" rx=\"2\" fill=\"#8fa1ff\"/><path d=\"M 0.0 -40.4 A 70 70 0 0 1 35.0 20.2 A 70 70 0 0 1 -35.0 20.2 A 70 70 0 0 1 0.0 -40.4 Z\" fill=\"#dfff54\" stroke=\"#fff\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M -35.0 20.2 A 70 70 0 0 0 35.0 20.2\" fill=\"none\" stroke=\"#ff6b52\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"0.0\" y1=\"-40.4\" x2=\"0.0\" y2=\"29.6\" stroke=\"#ff6b52\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><circle cx=\"0.0\" cy=\"-40.4\" r=\"5.5\" fill=\"#ff6b52\" stroke=\"#fff\" stroke-width=\"1.5\"/></svg>"];
 function askW(){ask('w','Why do the boards always stay {the same distance apart}?',['All the arcs have the same radius.','In every position, at least one vertex touches a board.','The arc opposite the touching vertex is centered at that vertex.'].map((t,i)=>TH6[i]+t));$('q').classList.add('thq')}
@@ -790,11 +809,11 @@ function upd(){
  if(V===4&&sg(sh)>=2*PI&&!fl.cd)fl.cd=1;
  if(V===1&&sg('m')>=2*PI-.1&&!fl.v){fl.v=1;setNext(1);showKey(1)}}
 function barUI(){let vis=false,pl=false,act='';
- if(V===1||V===6){vis=pl=true}
+ if(V===1){vis=pl=true}
  else if(V===2){vis=true;act='Check'}
- else if(V===3){if(fl.built&&cur<0&&nxt>=3){vis=true;act='↺ Redraw the arcs'}}
+ else if(V===3){}
  else if(V===4){vis=pl=true}
- $('bar').classList.toggle('hidden',!vis&&V!==4);$('bar').style.visibility='';$('play').classList.toggle('hidden',!pl&&V!==4);$('play').disabled=false;$('hint').classList.toggle('hidden',!pl);$('act').innerHTML=mi(act);$('act').classList.toggle('hidden',!act);$('act').disabled=V===2&&(!!fl.chk||!!fl.pend||!SO.every((_,i)=>A['s'+i]!==undefined));{const b4=$('chk4');if(b4)b4.style.visibility=V===4&&!fl.chk?'visible':'hidden'}}
+ $('bar').classList.toggle('hidden',!vis&&V!==4);$('bar').style.visibility='';$('play').classList.toggle('hidden',!pl&&V!==4);$('play').disabled=false;$('hint').classList.toggle('hidden',!pl);$('act').innerHTML=mi(act);$('act').classList.toggle('hidden',!act);$('act').disabled=V===2&&(!!fl.chk||!!fl.pend||!SO.every((_,i)=>A['s'+i]!==undefined));{const b4=$('chk4');if(b4)b4.style.visibility=V===4&&!fl.chk?'visible':'hidden'}{let r=$('rdw');if(!r){r=document.createElement('button');r.id='rdw';r.type='button';r.className='sec';r.textContent='↺ Redraw the arcs';r.onclick=()=>{ar=[0,0,0];cur=-1;nxt=0;fl.dq=1;fl.rb=0;hideFb();barUI()};$('stage').appendChild(r)}r.classList.toggle('hidden',!(V===3&&fl.built&&cur<0&&nxt>=3))}}
 function sortUI(){$('sort').innerHTML=SO.map(([t,n],i)=>'<div class="sc" id="sc'+i+'"><canvas width="220" height="250" data-t="'+t+'"></canvas><b>'+n+'</b><span class="sq">Constant width?</span><div class="two"><button class="opt" data-i="'+i+'" data-v="1">YES</button><button class="opt" data-i="'+i+'" data-v="0">NO</button></div></div>').join('');
  $('sort').querySelectorAll('canvas').forEach(k=>drawCard(k,0,false));
  $('sort').querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(fl.chk)return;A['s'+b.dataset.i]=+b.dataset.v;saveSt();b.parentNode.querySelectorAll('.opt').forEach(x=>{x.classList.toggle('sel',x===b);x.classList.remove('okm','nom');const m=x.querySelector('.mk');if(m)m.remove()});barUI()})}
@@ -818,14 +837,14 @@ function scrT(){const e=document.querySelector(".trow");if(!e||!V)return;window.
 function go(k){requestAnimationFrame(()=>requestAnimationFrame(scrT));closeFS();closeCX();if(k===0){try{saveSt()}catch(e){}parent.postMessage({home:1},'*');return}saveSt();ld2=true;V=k;play=false;lastFb=null;$('play').textContent='▶ Play';ang=k===1?inf('lens').a:0;sp={};rg={};fl={};nok=false;mo=0;ar=[0,0,0];cur=-1;nxt=0;a5=0;
  $('cn').textContent=k+' / '+N;
  const s=SC[k];$('t').textContent=s.t;$('fb').className='fb hidden';$('key').classList.add('hidden');$('q').className='hidden';$('next').textContent='Continue ›';setNext(0);
- $('hint').textContent=k===1?'Turn a shape with your finger or mouse.':'';$('stage').classList.toggle('hidden',k===2);$('sort').classList.toggle('hidden',k!==2);cv.style.height=k===1?(innerWidth<700?'240px':'350px'):k===3||k===4?(innerWidth<700?'440px':'400px'):'';
+ $('hint').textContent=k===1?'Turn a shape with your finger or mouse.':'';$('stage').classList.toggle('hidden',k===2||k===5||k===6);$('sort').classList.toggle('hidden',k!==2);cv.style.height=k===1?(innerWidth<700?'240px':'350px'):k===3||k===4?(innerWidth<700?'440px':'400px'):'';
  sh='reuleaux';U=(k===1);
  $('act').classList.add('hidden');
  if(k===2){sortUI()}
  if(k===3){fl.r=15;fl.dq=1;sh=qn(15);U=false;play=false}
  if(k===4){fl.r=15;sh=qn(15);ar=[1,1,1];nxt=3;U=true;fl.jaws=1;mo=1;play=false;slider3()}
- if(k===5){ask4()}
- if(k===6){startJaws();askW()}
+ if(k===5){}
+ if(k===6){}
  const s0=ST[k];
  if(s0){fl=s0.fl;sp=s0.sp;rg=s0.rg;
   const mark=key=>{if(fl['d'+key])$('q').querySelectorAll('button').forEach((x,i)=>{x.classList.toggle('sel',i===A[key]);x.disabled=!!fl.lk||!!(fl.v&&i===A[key])})};
@@ -839,7 +858,7 @@ function go(k){requestAnimationFrame(()=>requestAnimationFrame(scrT));closeFS();
  barUI();ld2=false;saveSt();prog();ui()}
 $('next').onclick=()=>{if(V===N){sav(N);saveSt();parent.postMessage({open:2},'*')}else go(V+1)};$('back').onclick=()=>go(V===1?0:V-1);
 $('act').onclick=()=>{if(V===3){ar=[0,0,0];cur=-1;nxt=0;fl.dq=1;fl.rb=0;hideFb();barUI();return}if(V===4){startChk();return}if(V===2)check()};
-let T4=null;$('play').onclick=()=>{if(!U)return;play=!play;$('play').textContent=play?'Ⅱ Pause':'▶ Play';if(V===4&&play&&!fl.chk){const r0=fl.r;clearTimeout(T4);T4=setTimeout(()=>{if(V===4&&fl.r===r0&&!fl.chk)startChk()},1000)}};
+let T4=null;$('play').onclick=()=>{if(!U)return;if(V===4&&!fl.chk){clearTimeout(T4);startChk();play=true;return}play=!play;$('play').textContent=play?'Ⅱ Pause':'▶ Play';if(V===4&&play&&!fl.chk){const r0=fl.r;clearTimeout(T4);T4=setTimeout(()=>{if(V===4&&fl.r===r0&&!fl.chk)startChk()},1000)}};
 function rc(v){const r=rg[sh]=rg[sh]||{lo:1e9,hi:-1e9};r.lo=Math.min(r.lo,v);r.hi=Math.max(r.hi,v)}
 function rot(d){const jaws=V===4||(V===6&&fl.jaws);if(!U||!(V===1||jaws))return;const m=Math.max(1,Math.ceil(Math.abs(d)/.03)),h=d/m;
  if(V===1){const ul=inf('lens').u;for(let i=0;i<m;i++){ang+=h;const r=rg.lens=rg.lens||{lo:1e9,hi:-1e9},w=bnd('lens',ang).w*20/ul;r.lo=Math.min(r.lo,w);r.hi=Math.max(r.hi,w)}sp.m=sg('m')+Math.abs(d);upd();return}
@@ -856,7 +875,7 @@ const DN={};function dense(t){if(DN[t])return DN[t];const P=pts(t),o=[];for(let 
 function ext(t,a,g){const sn=Math.sin(a),cn=Math.cos(a),D=dense(t);let m=-1e9;for(const p of D){const v=g*(p[0]*sn+p[1]*cn);if(v>m)m=v}let X=0,Y=0,n=0;for(const p of D){if(g*(p[0]*sn+p[1]*cn)>m-.0006){X+=p[0];Y+=p[1];n++}}return[X/n,Y/n]}
 function shape(t,x,y,a,R,nd){c.save();c.translate(x,y);c.rotate(a);c.beginPath();pts(t).forEach(([px,py],i)=>i?c.lineTo(px*R,py*R):c.moveTo(px*R,py*R));c.closePath();c.fillStyle=K.lime;c.fill();c.save();c.clip();c.strokeStyle='#fff';c.lineWidth=5;c.lineJoin='round';c.stroke();c.restore();
  if(!nd&&t==='circle'){const m=pts(t)[0];if(V===1){ln(0,0,m[0]*R,m[1]*R,K.coral,2.5);dot(0,0,7.5,'#fff');dot(0,0,4.8,'#10152f')}dot(m[0]*R,m[1]*R,5,K.coral);c.strokeStyle='#fff';c.lineWidth=1.5;c.beginPath();c.arc(m[0]*R,m[1]*R,5,0,7);c.stroke()}
- if(V===1||V===3||V===6){for(const m of[ext(t,a,-1),ext(t,a,1)]){dot(m[0]*R,m[1]*R,5,'#ffd166');c.strokeStyle='#fff';c.lineWidth=1.5;c.beginPath();c.arc(m[0]*R,m[1]*R,5,0,7);c.stroke()}}c.restore()}
+ if(V===3||V===6){for(const m of[ext(t,a,-1),ext(t,a,1)]){dot(m[0]*R,m[1]*R,5,'#ffd166');c.strokeStyle='#fff';c.lineWidth=1.5;c.beginPath();c.arc(m[0]*R,m[1]*R,5,0,7);c.stroke()}}c.restore()}
 function arrow(x,y1,y2,lab,nra){if(!nra){const q9=14;c.save();c.strokeStyle='#c8cdea';c.lineWidth=1.8;c.beginPath();c.moveTo(x-q9,y1);c.lineTo(x-q9,y1+q9);c.lineTo(x,y1+q9);c.moveTo(x-q9,y2);c.lineTo(x-q9,y2-q9);c.lineTo(x,y2-q9);c.stroke();c.restore()}ln(x,y1+7,x,y2-7,K.ink,2);c.fillStyle=K.ink;for(const[y,s]of[[y1,1],[y2,-1]]){c.beginPath();c.moveTo(x,y);c.lineTo(x-4.5,y+s*10);c.lineTo(x+4.5,y+s*10);c.fill()}
  if(!lab)return;c.font='700 12px system-ui';c.textAlign='right';c.textBaseline='middle';const m=(y1+y2)/2,tw=c.measureText(lab).width;c.globalAlpha=.92;c.fillStyle='#121634';c.fillRect(x-tw-16,m-10,tw+10,20);c.globalAlpha=1;c.fillStyle='#8fa1ff';c.fillText(lab,x-11,m);c.textBaseline='alphabetic'}
 function lab(l,v,r){$('ml').textContent=l;$('val').textContent=v;$('rng').textContent=r;$('mt').classList.toggle('hidden',!l)}
@@ -869,19 +888,20 @@ function calMulti(W,H){const two=V===1,nar=W<500,k=Math.min(two?(H-106)/20:H*.42
  txt('BOARD',cx-Lw/2,top1-16,'700 10px system-ui',K.mut,'left');txt('BOARD',cx-Lw/2,gr+24,'700 10px system-ui',K.mut,'left');
  if(!two){txt('Circle',x1,gr+34,'800 16px system-ui','#fff');txt('Reuleaux triangle',x2,gr+34,'800 16px system-ui','#fff')}
  if(mo>=1){
-  if(two){arrow(x1-12*k,top1,gr,'');arrow(x2-12*k,top2,gr,'');lab('','','')}
+  if(two){arrow(x1-12*k,top1,gr,'');if(x2-12*k-16>cx+10)arrow(x2-12*k,top2,gr,'');lab('','','')}
   else{arrow(cx,top1,gr,'20.0 cm');lab('WIDTH','20.0 cm','')}}else lab('','','')}
 const SER='italic 700 17px "Times New Roman",Times,serif';
 function cal(W,H){const e=1-Math.pow(1-Math.min(mo,1),3),b=bnd(sh,ang),u=uu(),cx=W/2,k=Math.min(H*.55/20,(W-30)/62)*(fl.slow?.55:1),R=20/u*k,gr=H*.5+10*k,L=Math.min(W-30,62*k);
  const cy=gr-b.hi*R,top=gr-b.w*R;
  c.save();c.globalAlpha=e;c.fillStyle=K.acc;c.beginPath();c.roundRect(cx-L/2,top-9,L,9,3);c.fill();c.beginPath();c.roundRect(cx-L/2,gr,L,9,3);c.fill();c.restore();shape(sh,cx,cy,ang,R,true);
  const P=pts(sh),s=Math.sin(ang),q=Math.cos(ang);let it=0,ib=0,lo=1e9,hi=-1e9;P.forEach(([x,y],i)=>{const v=x*s+y*q;if(v<lo){lo=v;it=i}if(v>hi){hi=v;ib=i}});const pos=p=>[cx+(p[0]*q-p[1]*s)*R,cy+(p[0]*s+p[1]*q)*R],pt=pos(P[it]),pb=pos(P[ib]);
- if(fl.slow){const VV=poly(3,-PI/2),ps=VV.map(p=>[cx+(p[0]*q-p[1]*s)*R,cy+(p[0]*s+p[1]*q)*R]);let best=-1,bd=1e9;ps.forEach((p,i)=>{const d=Math.min(Math.abs(p[1]-top),Math.abs(p[1]-gr));if(d<bd){bd=d;best=i}});c.save();ps.forEach((p,i)=>{c.setLineDash(i===best?[]:[6,6]);c.strokeStyle=i===best?K.coral:'rgba(200,205,234,.55)';c.lineWidth=i===best?2.2:1.4;c.beginPath();c.arc(p[0],p[1],S3*R,0,7);c.stroke()});c.restore();dot(ps[best][0],ps[best][1],5,K.coral)}
+ if(fl.slow){const VV=poly(3,-PI/2),ps=VV.map(p=>[cx+(p[0]*q-p[1]*s)*R,cy+(p[0]*s+p[1]*q)*R]);let best=-1,bd=1e9;ps.forEach((p,i)=>{const d=Math.min(Math.abs(p[1]-top),Math.abs(p[1]-gr));if(d<bd){bd=d;best=i}});c.save();ps.forEach((p,i)=>{c.setLineDash(i===best?[]:[6,6]);c.strokeStyle=i===best?K.coral:'rgba(200,205,234,.55)';c.lineWidth=i===best?2.2:1.4;c.beginPath();c.arc(p[0],p[1],S3*R,0,7);c.stroke()});c.restore();dot(ps[best][0],ps[best][1],5,K.coral);{const v=VV[best],ba=Math.atan2(-v[1],-v[0])+1.25,ml=[v[0]+S3*Math.cos(ba),v[1]+S3*Math.sin(ba)];OPD=[cx+(ml[0]*q-ml[1]*s)*R,cy+(ml[0]*s+ml[1]*q)*R]}}
  if(fl.seg){c.save();c.setLineDash([5,4]);ln(pt[0],pt[1],pb[0],pb[1],'#2a3a9f',2.5);c.restore();for(const pp of[pt,pb]){dot(pp[0],pp[1],4,'#2a3a9f');c.strokeStyle='#fff';c.lineWidth=1.2;c.beginPath();c.arc(pp[0],pp[1],4,0,7);c.stroke()}
   }
 
+ if(fl.slow&&OPD){const op=OPD;dot(op[0],op[1],5,K.coral);c.strokeStyle='#fff';c.lineWidth=1.5;c.beginPath();c.arc(op[0],op[1],5,0,7);c.stroke()}
  if(mo>=1)arrow(cx+L/2-20,top,gr,'');lab('','','')}
-var HP=[],shT=0;
+var OPD=null;var HP=[],shT=0;
 function tri4(W,H){const nar=W<600,ph=nar?H/2:H,pw=nar?W:W/2;HP=[];
  const pp=fl.show?(shT?Math.min(1,(performance.now()-shT)/1800):1):0,e=pp*pp*(3-2*pp);
  for(let i=0;i<2;i++){const x0=nar?0:i*pw,y0=nar?i*ph:0,L0=Math.min(pw*.6,ph-104),Lf=Math.min(L0,(ph-64)/2),bs=Math.max(30,(ph-L0*S3/2)/2-2),L=L0+(Lf-L0)*e,Rpx=L/S3,A0=[x0+pw/2,y0+bs+(14+Lf-bs)*e],B=[A0[0]-L/2,A0[1]+L*S3/2],C=[A0[0]+L/2,B[1]],Gc=[A0[0],A0[1]+Rpx],Q=pts('q1').map(p=>[Gc[0]+p[0]*Rpx,Gc[1]+p[1]*Rpx]);
@@ -910,9 +930,10 @@ function showKey(k){const d=KEYS[k];$('ks').textContent=d[0];$('kb').innerHTML=d
 function ui(){let t='',l=(SC[V]||{}).ld||'',sb=(SC[V]||{}).sub||'',nb='';const arcsDone=nxt>=3&&cur<0;
  if(V===1)t=fl.v?'Done ✓':'Rotate the shapes all the way around.';
  else if(V===2)t=fl.chk?'Done ✓':'Make your predictions, then check.';
- else if(V===3){t=arcsDone?'Three arcs drawn ✓':['Click vertex A.','Now click vertex B.','Now click vertex C.'][cur>=0?cur:nxt];if(arcsDone)nb='Does it have constant width? Let\'s find out!'}
- else if(V===4)t=fl.v&&fl.r===20?'Done ✓':!fl.chk?'Move the slider, then click Play.':'Adjust the opening, then click Play to test.';
- else if(V===5)t='Drag points P and Q along the arc, then answer.';
+ else if(V===3){t=arcsDone?'Three arcs drawn ✓':['Click vertex A.','Now click vertex B.','Now click vertex C.'][cur>=0?cur:nxt];const kk=$('key');if(arcsDone){if(kk.classList.contains('hidden')){$('ks').textContent='NEXT UP';$('kb').innerHTML='Does it have constant width?<br><em>Let\'s find out!</em>';$('kb').classList.remove('plain');$('ki').innerHTML='<span style="font:800 28px system-ui;color:#10152f">?</span>';kk.classList.remove('hidden')}}else kk.classList.add('hidden')}
+ else if(V===4){t=fl.v&&fl.r===20?'Done ✓':!fl.e?'Set the compass opening, then click Check.':'Adjust the compass opening, then click Check.';const pb=$('play'),lb=!fl.chk?'Check':play?'Ⅱ Pause':'▶ Play';if(pb.textContent!==lb)pb.textContent=lb}
+ else if(V===5)t=E5T;
+ else if(V===6)t=E6T;
  $('lead').classList.toggle('asq',V===2);
  {let e=$('nb');if(!e){e=document.createElement('p');e.id='nb';e.className='lead nb hidden';const w=document.querySelector('.ctl')||$('bar');w.after(e)}}for(const[id,s]of[['todo',t],['lead',l],['sub',sb],['nb',nb]]){const e=$(id);if(e.textContent!==s)e.textContent=s;e.classList.toggle('hidden',!s)}}
 let last=0;function fr(t){const dt=Math.min((t-last)/1000,.05);last=t;if(cxT)drawCX(dt);if(play&&U)rot(dt*(V===6&&fl.slow?.45:1.3));if(V===1||V===6||(V===4&&fl.jaws))mo=Math.min(mo+dt*.9,1);if(V===2&&(fl.chk||fl.anim)){a5+=dt*.9;$('sort').querySelectorAll('canvas').forEach(k=>drawCard(k,a5+inf(k.dataset.t).a,true));if(fl.pend&&a5-fl.a0>=PI)check(1)}
@@ -922,7 +943,7 @@ cv.addEventListener('pointerdown',e=>{if(V!==5)return;const r=cv.getBoundingClie
 cv.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(dgPQ===null){if(V===5)cv.style.cursor=HP.some(p=>(p.n==='P'||p.n==='Q')&&Math.hypot(p.x-x,p.y-y)<26)?'grab':'';return}
  const g=n=>HP.find(p=>p.d===dgPQ&&p.n===n),A0=g('A'),B=g('B'),C=g('C');if(!A0)return;const a1=Math.atan2(B.y-A0.y,B.x-A0.x),a2=Math.atan2(C.y-A0.y,C.x-A0.x),a=Math.atan2(y-A0.y,x-A0.x),sl=Math.max(0,Math.min(1,(a-a1)/(a2-a1)));if(dgPQ)fl.qv=sl;else fl.pv=sl;cv.style.cursor='grabbing'});
 cv.addEventListener('pointerup',()=>{if(dgPQ!==null){dgPQ=null;cv.style.cursor='';saveSt()}});cv.style.touchAction='none';
-function renderFb(html,cls,head){const e=$('fb');let h=head;if(!h){if(cls==='ok')h='Nice work!';else if(cls==='warn')h=(fl.e||1)<=1?'Take another look!':'Here\'s a hint!';else h=''}
+function renderFb(html,cls,head){const e=$('fb');let h=head;if(h==='-')h='';else if(!h){if(cls==='ok')h='Nice work!';else if(cls==='warn')h=(fl.e||1)<=1?'Take another look!':'Here\'s a hint!';else h=''}
  e.innerHTML='<span class="fbi"></span><div class="fbt">'+(h?'<b class="fh">'+h+'</b>':'')+'<div>'+html+'</div></div><button type="button" class="pri fbn">'+$('next').textContent+'</button>';e.className='fb '+cls;syncFb()}
 function syncFb(){const b=document.querySelector('#fb .fbn'),f=$('fb');if(b){b.classList.toggle('hidden',$('next').disabled);b.textContent=$('next').textContent;b.onclick=()=>{if(!$('next').disabled)$('next').click()}}document.body.classList.toggle('fbon',!!b&&!$('next').disabled&&!f.classList.contains('hidden'))}
 function closeFS(){document.body.classList.remove('fbon')}
@@ -952,11 +973,238 @@ function okfb(m,cls){const ok=cls==='ok';document.querySelectorAll('.opt').forEa
 function startScreen(){try{if(LS.getItem('cw-en-go1')){LS.removeItem('cw-en-go1');return 1}}catch(e){}const d=ld();return d&&d<N&&cs?Math.min(cs,N):1}
 function liftQ(){const t=$('t'),q=$('q'),lg=q.querySelector('legend'),s=SC[V]||{};if(!t)return;if(lg&&lg.childNodes.length&&!q.classList.contains('hidden'))t.replaceChildren(...lg.childNodes);else t.innerHTML=s.h||s.t||''}
 function liftT(){const td=$('todo'),st=$('stage');if(td&&st&&!$('q').contains(td))st.before(td)}
-{const _g=go;go=function(k){_g(k);if(k){liftQ();liftT();{let c4=$('ctl4');if(!c4){c4=document.createElement('div');c4.id='ctl4'}c4.replaceChildren();let r4=$('row4');if(k===4){if(!r4){r4=document.createElement('div');r4.id='row4'}$('stage').before(r4);r4.replaceChildren($('todo'),c4);c4.append(...$('q').querySelectorAll('.sll,.slrow'));$('q').classList.add('hidden')}else{c4.remove();if(r4)r4.remove()}}}}}
+{const _g=go;go=function(k){_g(k);if(k){liftQ();liftT();{let c4=$('ctl4');if(!c4){c4=document.createElement('div');c4.id='ctl4'}c4.replaceChildren();if(k===4){$('stage').appendChild(c4);c4.append(...$('q').querySelectorAll('.sll,.slrow'));$('q').classList.add('hidden')}else c4.remove()}}}}
+var E5T='';
+function E5make(root,H){
+// H: {setTodo(t), onSolved(), hint(pane,html,head)}
+const LR=(a,b)=>'<span class="e5w">'+a+'</span><span class="e5n">'+b+'</span>';
+root.innerHTML='<div class="e5g">'+[0,1].map(i=>'<div class="e5p" data-s="'+i+'"><div class="stage e5st"><canvas></canvas><button type="button" class="sec e5r">↺ Redraw</button><div class="e5q">Which is longer?</div><div class="e5o"><button type="button" class="opt" data-a="1">Red</button><button type="button" class="opt" data-a="0">Blue</button><button type="button" class="opt e5wide" data-a="2">The same length</button></div></div><div class="fb warn hidden e5f"></div></div>').join('')+'</div>';
+const S3=Math.sqrt(3),A=[0,20/S3],B=[-10,-10/S3],C=[10,-10/S3],V3=[A,B,C];
+const sub=(p,q)=>[p[0]-q[0],p[1]-q[1]],len=p=>Math.hypot(p[0],p[1]);
+function inter(P,Q,r,near){const d=len(sub(Q,P)),a=d/2,h=Math.sqrt(Math.max(r*r-a*a,0)),M=[(P[0]+Q[0])/2,(P[1]+Q[1])/2],u=[(Q[0]-P[0])/d,(Q[1]-P[1])/d],n=[-u[1],u[0]];
+ const c1=[M[0]+h*n[0],M[1]+h*n[1]],c2=[M[0]-h*n[0],M[1]-h*n[1]];return len(sub(c1,near))<len(sub(c2,near))?c1:c2}
+const inside=(p,r)=>V3.every(v=>len(sub(p,v))<=r+1e-7);
+function build(r){
+ const pick=(P,Q,cands)=>cands.map(n=>inter(P,Q,r,n)).find(p=>inside(p,r));
+ const T=pick(B,C,[[0,40],[0,-40]]),L=pick(A,C,[[-40,-20],[40,40]]),Rc=pick(A,B,[[40,-20],[-40,40]]);
+ const ang=(o,p)=>Math.atan2(p[1]-o[1],p[0]-o[0]);
+ const arcs=[{o:A,a1:ang(A,L),a2:ang(A,Rc)},{o:B,a1:ang(B,Rc),a2:ang(B,T)},{o:C,a1:ang(C,T),a2:ang(C,L)}];
+ arcs.forEach(a=>{let d=a.a2-a.a1;while(d<=-Math.PI)d+=2*Math.PI;while(d>Math.PI)d-=2*Math.PI;a.d=d});
+ const pts=[];for(const a of arcs)for(let i=0;i<=60;i++){const t=a.a1+a.d*i/60;pts.push([a.o[0]+r*Math.cos(t),a.o[1]+r*Math.sin(t)])}
+ const M=[A[0],A[1]-r],th0=Math.atan2(Rc[0]-T[0],T[1]-Rc[1]);
+ return {r,T,L,R:Rc,arcs,pts,M,red:len(sub(Rc,T)),th0,th:th0,lo:th0,hi:th0};
+}
+const SH=[build(20),build(25)];
+const FB=SH.map(s=>{let y0=1e9,y1=-1e9,xm=0;[[s.T,s.red],[A,s.r]].forEach(([o,r])=>{y0=Math.min(y0,o[1]-r);y1=Math.max(y1,o[1]+r);xm=Math.max(xm,Math.abs(o[0])+r)});return {y0,y1,xm}});
+const FXM=Math.max(...FB.map(b=>b.xm)),FH=Math.max(...FB.map(b=>b.y1-b.y0));
+const SP=1/0.7,DRAW=3000*SP,SEGIN=3200*SP,FADE=400*SP,ZOOM=1000*SP,CW0=1200*SP,CDUR=2600*SP,LAG=450*SP,R_DOT=6;
+const INSTR='Drag the red endpoint to turn the segment.',WATCH='Watch the two shapes being drawn…';
+const PN=[...root.querySelectorAll('.e5p')].map((el,i)=>({i,el,cv:el.querySelector('canvas'),c:el.querySelector('canvas').getContext('2d'),W:0,H:0,k:1,cx:0,cy:0,K0:1,CY0:0,K1:1,CY1:0,Z:0,fin:null,anim:null,t0:0,touched:false}));
+let good=[false,false],errs=[0,0],active=false,raf=0,tt=0,drag=null;
+function fit(){PN.forEach(p=>{const dpr=Math.min(devicePixelRatio||1,2);p.W=p.cv.clientWidth;p.H=p.cv.clientHeight;if(!p.W)return;p.cv.width=p.W*dpr;p.cv.height=p.H*dpr;p.c.setTransform(dpr,0,0,dpr,0,0);
+ p.K0=Math.min((p.W-28)/40,(p.H-110)/32);p.CY0=p.H/2+12+1.85*p.K0;
+ p.K1=Math.min((p.W-24)/(2*FXM),(p.H-64)/FH);const b=FB[p.i];p.CY1=p.H/2+12+(b.y0+b.y1)/2*p.K1;p.cx=p.W/2;setZ(p)})}
+function setZ(p){p.k=p.K0+(p.K1-p.K0)*p.Z;p.cy=p.CY0+(p.CY1-p.CY0)*p.Z}
+addEventListener('resize',()=>{if(active)fit()});
+const P=(s)=>[s.T[0]+s.red*Math.sin(s.th),s.T[1]-s.red*Math.cos(s.th)];
+function drawPane(p,now){
+ if(!p.W){fit();if(!p.W)return}
+ const c=p.c,s=SH[p.i],X=q=>[p.cx+q[0]*p.k,p.cy-q[1]*p.k];
+ const poly=pts=>{c.beginPath();pts.forEach((q,j)=>{const a=X(q);j?c.lineTo(a[0],a[1]):c.moveTo(a[0],a[1])})};
+ const seg=(a0,b0,col,w)=>{const a=X(a0),b=X(b0);c.save();c.strokeStyle=col;c.lineWidth=w;c.lineCap='round';c.beginPath();c.moveTo(a[0],a[1]);c.lineTo(b[0],b[1]);c.stroke();c.restore()};
+ const dot=(q,r,fill,stroke,sw)=>{const a=X(q);c.beginPath();c.arc(a[0],a[1],r,0,7);c.fillStyle=fill;c.fill();if(stroke){c.strokeStyle=stroke;c.lineWidth=sw||2;c.stroke()}};
+ const t=now-p.t0;
+ let cp=-1,cw=-1;
+ if(p.fin&&now>p.fin.t0){const u=Math.min(1,(now-p.fin.t0)/ZOOM);p.Z=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;
+  cp=Math.min(1,Math.max(0,(now-p.fin.t0-CW0)/CDUR));cw=p.i===0?Math.min(1,Math.max(0,(now-p.fin.t0-CW0-LAG)/CDUR)):cp;
+  if(cp>0&&cp<1){p.anim=null;s.th=s.th0+2*Math.PI*cp}else if(cp>=1&&cw>=1&&!p.fin.done){p.fin.done=true;s.th=s.th0}}
+ if(p.anim){const a=p.anim,u=Math.min(1,(now-a.t0)/a.dur),v=Math.sin(u*Math.PI);s.th=a.from+(a.to-a.from)*v;s.lo=Math.min(s.lo,s.th);s.hi=Math.max(s.hi,s.th);if(u>=1){s.th=a.from;p.anim=null}}
+ setZ(p);c.clearRect(0,0,p.W,p.H);
+ const prog=Math.min(1,t/DRAW);
+ if(prog<1){
+  c.save();c.strokeStyle='rgba(154,165,255,.45)';c.lineWidth=1.3;poly([A,B,C,A]);c.stroke();c.restore();
+  s.arcs.forEach((a,j)=>{const q=Math.max(0,Math.min(1,prog*3-j));if(q<=0)return;const ext=.12,a1=a.a1-ext*Math.sign(a.d),dd=a.d+2*ext*Math.sign(a.d),pts=[];for(let m=0;m<=40;m++){const u=a1+dd*q*m/40;pts.push([a.o[0]+s.r*Math.cos(u),a.o[1]+s.r*Math.sin(u)])}
+   c.save();c.strokeStyle='rgba(255,255,255,.7)';c.lineWidth=1.8;poly(pts);c.stroke();c.restore();
+   if(q<1){const u=a1+dd*q,pen=[a.o[0]+s.r*Math.cos(u),a.o[1]+s.r*Math.sin(u)];seg(a.o,pen,'#ff6b52',2.5);dot(a.o,4.5,'#ff6b52');dot(pen,4,'#fff')}});
+ }else{
+  const fa=Math.min(1,(t-DRAW)/FADE);
+  c.save();c.globalAlpha=fa;poly(s.pts);c.closePath();c.fillStyle='#dfff54';c.fill();c.restore();
+  c.save();c.strokeStyle='#59639a';c.lineWidth=1.3;poly([A,B,C,A]);c.stroke();c.restore();
+  c.save();poly(s.pts);c.closePath();c.clip();c.strokeStyle='#fff';c.lineWidth=5;c.lineJoin='round';c.stroke();c.restore();
+ }
+ V3.forEach(v=>dot(v,4.5,'#fff'));
+ if(cp>0){const circ=(o,r,a0,q,col,w,dash)=>{const pts=[];for(let m=0;m<=120;m++){const u=a0+2*Math.PI*q*m/120;pts.push([o[0]+r*Math.sin(u),o[1]-r*Math.cos(u)])}c.save();if(dash)c.setLineDash(dash);c.strokeStyle=col;c.lineWidth=w;poly(pts);c.stroke();c.restore()};
+  const a0=p.i===0?s.th0:Math.atan2(s.L[0]-A[0],A[1]-s.L[1]);
+  if(cw>0){circ(A,s.r,a0,cw,'rgba(255,255,255,.95)',2.4);if(cw<1){const u=a0+2*Math.PI*cw;seg(A,[A[0]+s.r*Math.sin(u),A[1]-s.r*Math.cos(u)],'rgba(255,255,255,.85)',2.5)}}
+  circ(s.T,s.red,s.th0,cp,'rgba(255,107,82,.95)',2.2,[7,6]);}
+ if(t>SEGIN){c.save();c.globalAlpha=Math.min(1,(t-SEGIN)/FADE);
+  if(s.hi-s.lo>.005&&cp<=0){const tp=[];for(let m=0;m<=80;m++){const u=s.lo+(s.hi-s.lo)*m/80;tp.push([s.T[0]+s.red*Math.sin(u),s.T[1]-s.red*Math.cos(u)])}c.save();c.setLineDash([6,5]);c.strokeStyle='#ff6b52';c.lineWidth=2.6;poly(tp);c.stroke();c.restore()}
+  seg(s.T,s.M,'#4f7bff',3.5);
+  const q=P(s);seg(s.T,q,'#ff6b52',3.5);
+  if(cp>0&&p.i===1)dot(A,5.5,'#fff','#10152f');
+  if(p.pa&&!p.touched&&!p.fin){const u=((t-DRAW)%1400)/1400,rr=7+u*22,a=X(A);if(t>DRAW){c.save();c.globalAlpha=(1-u)*.9;c.beginPath();c.arc(a[0],a[1],rr,0,7);c.strokeStyle='#fff';c.lineWidth=5;c.stroke();c.strokeStyle='#10152f';c.lineWidth=2.2;c.stroke();c.restore();dot(A,5.5,'#fff','#10152f')}}
+  dot(s.T,5.5,'#fff','#10152f');
+  if(p.first&&!p.touched&&!p.fin&&t-SEGIN>FADE){const u=((t-SEGIN-FADE)%1400)/1400,rr=R_DOT+2+u*20,a=X(q);c.save();c.globalAlpha=(1-u)*.9;c.beginPath();c.arc(a[0],a[1],rr,0,7);c.strokeStyle='#ff6b52';c.lineWidth=3;c.stroke();c.restore()}
+  dot(q,R_DOT,'#ff6b52','#fff',1.5);
+  c.restore()}
+ if(t>=DRAW){V3.forEach((v,j)=>{const q=X(v),o=(p.i===1?[[-16,2],[-9,17],[9,17]]:[[-16,2],[-16,22],[16,22]])[j];c.save();c.font='italic 700 17px "Times New Roman",Times,serif';c.textAlign='center';c.lineWidth=4;c.lineJoin='round';c.strokeStyle='rgba(13,16,40,.9)';c.strokeText('ABC'[j],q[0]+o[0],q[1]+o[1]);c.fillStyle='#fff';c.fillText('ABC'[j],q[0]+o[0],q[1]+o[1]);c.restore()})}
+}
+function loop(now){if(!active)return;PN.forEach(p=>drawPane(p,now));raf=requestAnimationFrame(loop)}
+const scr=(p,q)=>[p.cx+q[0]*p.k,p.cy-q[1]*p.k];
+const canDrag=p=>performance.now()-p.t0>=SEGIN&&!(p.fin&&!p.fin.done);
+function pos(p,e){const r=p.cv.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]}
+function hit(p,m){const q=scr(p,P(SH[p.i]));return Math.hypot(q[0]-m[0],q[1]-m[1])<28}
+function startFin(p,d){p.fin={t0:performance.now()+d,done:false}}
+function sweep(p){const s=SH[p.i];p.anim={from:s.th,to:s.th>0?-s.th0:s.th0,t0:performance.now(),dur:2600*SP}}
+function resetPane(p){const s=SH[p.i];p.pa=false;p.t0=performance.now();p.anim=null;p.fin=null;p.Z=0;s.th=s.lo=s.hi=s.th0;p.touched=false}
+PN.forEach(p=>{
+ p.cv.addEventListener('pointerdown',e=>{if(!canDrag(p))return;if(hit(p,pos(p,e))){drag=p;p.touched=true;p.anim=null;p.cv.setPointerCapture(e.pointerId);e.preventDefault()}});
+ p.cv.addEventListener('pointermove',e=>{const m=pos(p,e);if(drag!==p){p.cv.style.cursor=canDrag(p)&&hit(p,m)?'grab':'default';return}
+  const s=SH[p.i],tp=scr(p,s.T);let f=Math.atan2((m[0]-tp[0])/p.k,(m[1]-tp[1])/p.k);const free=good[0]&&good[1]&&p.fin&&p.fin.done;if(!free)f=Math.max(-s.th0,Math.min(s.th0,f));s.th=f;s.lo=Math.min(s.lo,f);s.hi=Math.max(s.hi,f);p.cv.style.cursor='grabbing'});
+ p.el.querySelector('.e5r').onclick=()=>{resetPane(p);p.first=false;p.pa=errs[p.i]>=2&&!good[p.i];if(good[0]&&good[1])startFin(p,SEGIN+600)};
+});
+addEventListener('pointerup',()=>{drag=null});
+const OK=[2,0];
+const HINTS=[['Turn the red segment slowly. Compare its endpoint\'s trail with the bottom edge of the shape.','Click Redraw and watch how the bottom edge is drawn.'],
+ ['Turn the red segment slowly. Compare its endpoint\'s trail with the bottom edge of the shape.','Click Redraw and watch how the bottom edge is drawn.']];
+function hint(p,txt,hd){const f=p.el.querySelector('.e5f');if(!txt){f.className='fb warn hidden e5f';f.innerHTML='';return}f.className='fb warn e5f';f.innerHTML='<span class="fbi"></span><div class="fbt"><b class="fh">'+hd+'</b><div>'+txt+'</div></div>'}
+function markOk(p){const opts=p.el.querySelectorAll('.opt');opts.forEach(x=>{const ok=+x.dataset.a===OK[p.i];x.classList.toggle('sel',ok);x.classList.toggle('okm',ok);x.disabled=true})}
+PN.forEach(p=>{const si=p.i,opts=p.el.querySelectorAll('.opt');
+ opts.forEach(b=>b.onclick=()=>{p.touched=true;if(good[si])return;const a=+b.dataset.a;opts.forEach(x=>x.classList.toggle('sel',x===b));
+  if(a===OK[si]){good[si]=true;markOk(p);hint(p,'');
+   if(good[0]&&good[1]){PN.forEach(q=>startFin(q,q.anim?2000*SP:800));H.onSolved&&H.onSolved()}}
+  else{errs[si]++;hint(p,HINTS[si][Math.min(errs[si],2)-1],errs[si]>1?'Here\'s a hint!':'Take another look!');sweep(p)}})});
+function start(done){active=true;clearTimeout(tt);good=[!!done,!!done];errs=[0,0];
+ PN.forEach(p=>{resetPane(p);p.first=true;hint(p,'');const opts=p.el.querySelectorAll('.opt');opts.forEach(x=>{x.classList.remove('sel','okm');x.disabled=false});
+  if(done){markOk(p);p.t0-=1e6;p.fin={t0:-1e9,done:true};p.Z=1}});
+ if(done)H.setTodo(INSTR);else{H.setTodo(WATCH);tt=setTimeout(()=>{if(active)H.setTodo(INSTR)},SEGIN)}
+ PN.forEach(p=>p.W=0);cancelAnimationFrame(raf);raf=requestAnimationFrame(loop)}
+function stop(){active=false;clearTimeout(tt);cancelAnimationFrame(raf)}
+return {start,stop};
+}
+
+const E5FB='In the <span class="e5w">left</span><span class="e5n">first</span> shape, the bottom edge is part of a circle centered at A, so both segments are radii of that circle. In the <span class="e5w">right</span><span class="e5n">second</span> shape, the bottom arc is centered at A, not at the top corner.';const E5=E5make($('e5'),{setTodo:t=>{E5T=t},onSolved:()=>{setNext(1);setFb(E5FB,'ok','That\'s right!')}});
+{const _g5=go;go=function(k){E5.stop();_g5(k);if(k===4&&fl.v){fl.r=20;sh=qn(20);fl.chk=1;fl.jaws=1;play=false;ang=0;{const e=$('rsl');if(e)e.value=20;const rv=$('rv');if(rv)rv.textContent='20 cm'}hideFb();showKey(4)}$('e5').classList.toggle('hidden',k!==5);if(k===5)E5.start(!!nok)}}
+var E6T='';
+function E6make(root,H){
+
+root.innerHTML='<div class="stage e6st"><canvas></canvas><div class="pbs hidden"><button type="button" class="pp2">Review the three positions</button><button type="button" class="pp">Ⅱ Pause</button></div></div>';
+const cv=root.querySelector('canvas'),c=cv.getContext('2d'),PBS=root.querySelector('.pbs'),PP=root.querySelector('.pp'),RV=root.querySelector('.pp2');
+const PI=Math.PI,S3=Math.sqrt(3),RHO=20/S3,TT=2*PI/3,CORAL='#ff6b52',LIME='#dfff54',BOARD='#8fa1ff',GREEN='#5cc46e';
+const V0=[0,1,2].map(i=>[RHO*Math.cos(PI/2+i*TT),RHO*Math.sin(PI/2+i*TT)]);   // A top, B left, C right (y up)
+const rot=(p,a)=>[p[0]*Math.cos(a)-p[1]*Math.sin(a),p[0]*Math.sin(a)+p[1]*Math.cos(a)];
+// outline (arc opposite vertex i is centered at vertex i, radius 20)
+function outline(V){const P=[];for(let i=0;i<3;i++){const o=V[i],a=V[(i+1)%3],b=V[(i+2)%3];let s=Math.atan2(a[1]-o[1],a[0]-o[0]),e=Math.atan2(b[1]-o[1],b[0]-o[0]);let d=e-s;while(d<-PI)d+=2*PI;while(d>PI)d-=2*PI;for(let k=0;k<=40;k++){const t=s+d*k/40;P.push([o[0]+20*Math.cos(t),o[1]+20*Math.sin(t)])}}return P}
+function arcPts(V,i){const o=V[i],a=V[(i+1)%3],b=V[(i+2)%3];let s=Math.atan2(a[1]-o[1],a[0]-o[0]),e=Math.atan2(b[1]-o[1],b[0]-o[0]);let d=e-s;while(d<-PI)d+=2*PI;while(d>PI)d-=2*PI;const P=[];for(let k=0;k<=60;k++){const t=s+d*k/60;P.push([o[0]+20*Math.cos(t),o[1]+20*Math.sin(t)])}return P}
+// rolling pose on the ground (y=0) under the top board (y=20)
+function pose(phi){const n=Math.floor((phi+PI/6)/TT),u=phi+PI/6-n*TT,A=n*PI/3+Math.min(u,PI/3)-PI/6,xc=20*A;
+ const V=V0.map(p=>rot(p,-phi));let low,ctr,top;
+ if(u<PI/3){ctr=[0,1,2].reduce((m,i)=>V[i][1]>V[m][1]?i:m,0);low=[V[ctr][0],V[ctr][1]-20];top=false}
+ else{ctr=[0,1,2].reduce((m,i)=>V[i][1]<V[m][1]?i:m,0);low=V[ctr];top=true}
+ const off=[xc-low[0],-low[1]];return {V:V.map(p=>[p[0]+off[0],p[1]+off[1]]),C:[off[0],off[1]],ctr,arcTop:top,phi,gx:xc}}
+const STOPS=[-0.45,2.4,5.09],PMIN=-0.45,PMAX=5.25;
+let phi=PMIN,ghosts=[pose(STOPS[0])],solved=[false,false,false],errs=[0,0,0],sw=[null,null,null],flash=null,reward=null,rwA=0,last=0,active=false,raf=0,T6=0;
+// centroid x as a function of phi (monotonic) -> lets the shape follow the pointer without slipping
+const TAB=[];for(let i=0;i<=2000;i++){const f=PMIN+(PMAX-PMIN)*i/2000;TAB.push([f,pose(f).C[0]])}
+function phiAt(x){if(x<=TAB[0][1])return PMIN;if(x>=TAB[2000][1])return PMAX;let lo=0,hi=2000;while(hi-lo>1){const m=(lo+hi)>>1;if(TAB[m][1]<x)lo=m;else hi=m}const a=TAB[lo],b=TAB[hi];return a[0]+(b[0]-a[0])*(x-a[1])/(b[1]-a[1]||1)}
+// view
+let W=0,HH=0,k=1,ox=0,oy=0;
+function fit(){const d=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;HH=cv.clientHeight;cv.width=W*d;cv.height=HH*d;c.setTransform(d,0,0,d,0,0);
+ const x0=-24,x1=64;k=Math.min((W-30)/(x1-x0),(HH-84)/42);ox=(W-(x1-x0)*k)/2-x0*k;oy=HH-50-((HH-84)-40*k)/2}
+addEventListener('resize',()=>{if(active)fit()});
+const X=p=>[ox+p[0]*k,oy-p[1]*k];
+function poly(P,close){c.beginPath();P.forEach((p,i)=>{const q=X(p);i?c.lineTo(q[0],q[1]):c.moveTo(q[0],q[1])});if(close)c.closePath()}
+function dot(p,r,f,s,w){const q=X(p);c.beginPath();c.arc(q[0],q[1],r,0,7);c.fillStyle=f;c.fill();if(s){c.strokeStyle=s;c.lineWidth=w||1.5;c.stroke()}}
+function lab(t,p,ctr){const q=X(p),cc=X(ctr),dx=q[0]-cc[0],dy=q[1]-cc[1],n=Math.hypot(dx,dy)||1,x=q[0]+dx/n*17,y=q[1]+dy/n*17+6;c.save();c.font='italic 700 17px "Times New Roman",Times,serif';c.textAlign='center';c.lineWidth=4;c.lineJoin='round';c.strokeStyle='rgba(13,16,40,.9)';c.strokeText(t,x,y);c.fillStyle='#fff';c.fillText(t,x,y);c.restore()}
+function boards(x0,x1,yt,yb){c.fillStyle=BOARD;for(const y of [yt,yb]){const a=X([x0,y]),b=X([x1,y]);c.beginPath();c.roundRect(a[0],y===yt?a[1]-9:a[1],b[0]-a[0],9,3);c.fill()}}
+function shapeFill(P,alpha){c.save();c.globalAlpha=alpha;poly(P,true);c.fillStyle=LIME;c.fill();c.restore();c.save();poly(P,true);c.clip();c.strokeStyle='#fff';c.lineWidth=5;c.lineJoin='round';c.stroke();c.restore()}
+function contact(ps){const a=arcPts(ps.V,ps.ctr);return ps.arcTop?a.reduce((m,p)=>p[1]>m[1]?p:m,a[0]):a.reduce((m,p)=>p[1]<m[1]?p:m,a[0])}
+function drawPos(ps,ghost,full,solved,cand,gi,ov){
+ const P=outline(ps.V);if(!ov){
+ if(full){c.save();c.setLineDash([6,6]);c.strokeStyle='rgba(225,230,255,.75)';c.lineWidth=1.5;c.beginPath();const q=X(ps.V[ps.ctr]);c.arc(q[0],q[1],20*k,0,7);c.stroke();c.restore()}
+ if(ghost){c.save();c.globalAlpha=.5;poly(P,true);c.fillStyle='#34401f';c.fill();c.restore();c.save();poly(P,true);c.strokeStyle='rgba(255,255,255,.55)';c.lineWidth=1.6;c.stroke();c.restore()}
+ else shapeFill(P,1);
+ }if(ov===false)return;
+ c.save();c.setLineDash([7,6]);c.strokeStyle=CORAL;c.lineWidth=2.8;poly(arcPts(ps.V,ps.ctr));c.stroke();c.restore();
+ if(solved){const o=ps.V[ps.ctr],e=contact(ps),perp=Math.atan2(e[1]-o[1],e[0]-o[0]);let ang=perp;const S=sw[gi];
+  if(S){const AP=arcPts(ps.V,ps.ctr),a1=Math.atan2(AP[0][1]-o[1],AP[0][0]-o[0]),a2=Math.atan2(AP[60][1]-o[1],AP[60][0]-o[0]);const un=x=>{while(x-perp>PI)x-=2*PI;while(x-perp<-PI)x+=2*PI;return x};const b1=un(a1),b2=un(a2),u=Math.min(1,(performance.now()-S)/2400),ez=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+   if(u<.2)ang=perp+(b1-perp)*ez(u/.2);else if(u<.65)ang=b1+(b2-b1)*ez((u-.2)/.45);else ang=b2+(perp-b2)*ez((u-.65)/.35)}
+  const end=[o[0]+20*Math.cos(ang),o[1]+20*Math.sin(ang)],A1=X(o),B1=X(end);c.save();c.strokeStyle=CORAL;c.lineWidth=3.5;c.lineCap='round';c.beginPath();c.moveTo(A1[0],A1[1]);c.lineTo(B1[0],B1[1]);c.stroke();c.restore();dot(end,5,CORAL,'#fff');
+  dot(o,7,GREEN,'#fff',2)}
+ if(cand)candDots(ps,gi)
+}
+function candDots(ps,gi){const fa=Math.max(0,Math.min(1,(performance.now()-ansT-250)/500));c.save();c.globalAlpha=fa;[...ps.V,ps.C].forEach((v,i)=>{const fl=flash&&flash.g===gi&&flash.i===i&&performance.now()-flash.t<900;dot(v,i<3?6:5,fl?CORAL:'#fff','#10152f',2)});c.restore()}
+function marker(){if(flash&&performance.now()-flash.t<900){const q=X(flash.p);c.save();c.globalAlpha=1-(performance.now()-flash.t)/900;c.beginPath();c.arc(q[0],q[1],6,0,7);c.fillStyle=CORAL;c.fill();c.strokeStyle='#fff';c.lineWidth=1.5;c.stroke();c.restore()}}
+function posMarks(){STOPS.forEach((f,i)=>{const ps=pose(f),q=X([ps.gx,0]),got=!!ghosts[i];c.fillStyle=solved[i]?GREEN:got?LIME:'#8fa1ff';c.beginPath();c.moveTo(q[0],q[1]+13);c.lineTo(q[0]-7,q[1]+25);c.lineTo(q[0]+7,q[1]+25);c.closePath();c.fill();c.font='800 13px Inter,sans-serif';c.textAlign='center';if(solved[i]){c.fillStyle=GREEN;c.font='900 15px Inter,sans-serif';c.fillText('✓',q[0],q[1]+42)}else{c.fillStyle=got?LIME:'#c8cdea';c.fillText(String(i+1),q[0],q[1]+41)}})}
+function setFb(m,cls,hd){H.fb(m,cls,hd)}
+let ANS=false,ansT=0,review=false;function upd(){const n=ghosts.filter(Boolean).length;H.setTodo(reward?'':!ANS?'Drag the shape to the right: '+n+' of 3 positions.':'Done ✓ Select one marked point in each outline.')}
+// reward animation: the shape turns between two boards
+let rwPlay=true,rwCi=-1,rwJ=-1;
+function drawReward(dt){const sv=[k,ox,oy];{const x0=-14,x1=54;k=Math.min((W-30)/(x1-x0),(HH-30)/62);ox=(W-(x1-x0)*k)/2-x0*k;oy=HH/2+10*k}
+ if(rwPlay)rwA+=dt*.45;const a=rwA;const V=V0.map(p=>rot(p,-a)),P=outline(V);
+ // exact contact: is the downward direction inside the arc centered at vertex i?
+ const inArc=(i,dx,dy)=>{const o=V[i],a=V[(i+1)%3],b=V[(i+2)%3],an=x=>Math.atan2(x[1]-o[1],x[0]-o[0]);let s1=an(a),d=an(b)-s1;while(d<-PI)d+=2*PI;while(d>PI)d-=2*PI;let t=Math.atan2(dy,dx)-s1;while(t<-PI)t+=2*PI;while(t>PI)t-=2*PI;return d>0?(t>=0&&t<=d):(t<=0&&t>=d)};
+ let ci=-1;for(let i=0;i<3;i++)if(inArc(i,0,-1)){ci=i;break}
+ let low;if(ci>=0){low=V[ci][1]-20}else{ci=[0,1,2].reduce((m,i)=>V[i][1]<V[m][1]?i:m,0);low=V[ci][1]}   // ci = vertex touching a board = center of the arc touching the other board
+ const sh=[20,-low],T=p=>[p[0]+sh[0],p[1]+sh[1]],Vs=V.map(T),Ps=P.map(T);
+ // red radius: at each hand-over it lies on the width segment (a side of the triangle), then stays fixed to the shape
+ if(ci!==rwCi){rwCi=ci;rwJ=[0,1,2].filter(j=>j!==ci).reduce((m,j)=>Math.abs(V[j][0]-V[ci][0])<Math.abs(V[m][0]-V[ci][0])?j:m,(ci+1)%3)}
+ c.save();c.globalAlpha=Math.min(1,reward.t/600);
+ boards(-12,52,20,0);
+ Vs.forEach((v,i)=>{if(i===ci)return;const q=X(v);c.save();c.setLineDash([6,6]);c.strokeStyle='rgba(200,205,234,.22)';c.lineWidth=1.3;c.beginPath();c.arc(q[0],q[1],20*k,0,7);c.stroke();c.restore()});
+ {const q=X(Vs[ci]);c.save();c.strokeStyle=CORAL;c.lineWidth=2.2;c.beginPath();c.arc(q[0],q[1],20*k,0,7);c.stroke();c.restore()}
+ shapeFill(Ps,1);
+ {const xs=Vs[ci][0],A1=X([xs,20]),B1=X([xs,0]);c.save();c.setLineDash([5,4]);c.strokeStyle='#2a3a9f';c.lineWidth=2.5;c.beginPath();c.moveTo(A1[0],A1[1]);c.lineTo(B1[0],B1[1]);c.stroke();c.restore();for(const y of [20,0])dot([xs,y],4,'#2a3a9f','#fff',1.2)}
+ {const m=Vs[rwJ],A1=X(Vs[ci]),B1=X(m);c.save();c.strokeStyle=CORAL;c.lineWidth=3.5;c.lineCap='round';c.beginPath();c.moveTo(A1[0],A1[1]);c.lineTo(B1[0],B1[1]);c.stroke();c.restore();dot(m,5,CORAL,'#fff');dot(Vs[ci],5.5,CORAL,'#fff')}
+ // width arrow
+ {const xa=X([47,20]),xb=X([47,0]);c.strokeStyle='#eef0ff';c.lineWidth=2;c.beginPath();c.moveTo(xa[0],xa[1]+7);c.lineTo(xb[0],xb[1]-7);c.stroke();c.fillStyle='#eef0ff';for(const[y,s2]of[[xa[1],1],[xb[1],-1]]){c.beginPath();c.moveTo(xa[0],y);c.lineTo(xa[0]-4.5,y+s2*10);c.lineTo(xa[0]+4.5,y+s2*10);c.fill()}
+  c.font='700 14px Inter,sans-serif';c.textAlign='left';c.fillStyle='#c8cdea';c.fillText('20 cm',xa[0]+10,(xa[1]+xb[1])/2+5)}
+ c.restore();[k,ox,oy]=sv}
+PP.onclick=()=>{rwPlay=!rwPlay;PP.textContent=rwPlay?'Ⅱ Pause':'▶ Play'};
+RV.onclick=()=>{review=!review;RV.textContent=review?'Back to the animation':'Review the three positions';PP.classList.toggle('hidden',review)};
+function frame(t){if(!active)return;if(!W)fit();const dt=Math.min(.05,(t-last)/1000);last=t;c.clearRect(0,0,W,HH);
+ if(reward&&!review){reward.t+=dt*1000;drawReward(dt)}
+ else{
+  boards(-24,64,20,0);
+  ghosts.forEach((ps,i)=>{if(ps)drawPos(ps,true,false,solved[i],ANS&&!solved[i],i)});
+  if(!ANS)drawLive(pose(phi),1);else{const u=(performance.now()-ansT)/500;if(u<1)drawLive(pose(phi),1-u)}
+  posMarks();
+ }
+ raf=requestAnimationFrame(frame)}
+function allSolved(){return solved.every(x=>x)}
+function drawLive(ps,al){c.save();c.globalAlpha=al;{c.save();c.setLineDash([6,6]);c.strokeStyle='rgba(225,230,255,.75)';c.lineWidth=1.5;c.beginPath();const q=X(ps.V[ps.ctr]);c.arc(q[0],q[1],20*k,0,7);c.stroke();c.restore()}shapeFill(outline(ps.V),1);c.restore()}
+// interaction. Stage 1: drag to roll and leave three outlines. Stage 2: rolling is off; choose one of the marked points in each outline.
+let drag=null;
+function mpos(e){const r=cv.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]}
+function pick(m){let best=null,bd=20;ghosts.forEach((ps,g)=>{if(!ps||solved[g])return;[...ps.V,ps.C].forEach((p,i)=>{const q=X(p),d=Math.hypot(q[0]-m[0],q[1]-m[1]);if(d<bd){bd=d;best={g,i}}})});return best}
+function choose(h){const ps=ghosts[h.g];
+ if(h.i===ps.ctr){solved[h.g]=true;sw[h.g]=performance.now();setFb('');upd();if(allSolved())T6=setTimeout(()=>{if(!active)return;startReward();H.onSolved()},2900);return}
+ errs[h.g]++;flash={g:h.g,i:h.i,t:performance.now()};
+ setFb(h.i===3?'That\'s the middle of the shape. The center of the circle is somewhere else.':'That point is on the arc. The center is the same distance from every point of the arc.','warn',errs[h.g]===1?'Take another look!':'Here\'s a hint!')}
+cv.addEventListener('pointerdown',e=>{if(reward)return;const m=mpos(e);
+ if(ANS){const h=pick(m);if(h)choose(h);return}
+ drag={x:m[0],cx:pose(phi).C[0]};cv.setPointerCapture(e.pointerId);cv.style.cursor='grabbing'});
+cv.addEventListener('pointermove',e=>{const m=mpos(e);if(reward){cv.style.cursor='default';return}
+ if(ANS){cv.style.cursor=pick(m)?'pointer':'default';return}
+ if(!drag){cv.style.cursor='grab';return}
+ phi=phiAt(drag.cx+(m[0]-drag.x)/k);STOPS.forEach((f,i)=>{if(!ghosts[i]&&phi>=f){ghosts[i]=pose(f);upd()}});
+ if(ghosts.filter(Boolean).length===3){ANS=true;ansT=performance.now();drag=null;cv.style.cursor='default';upd()}});
+addEventListener('pointerup',()=>{if(drag){drag=null;cv.style.cursor='grab'}});
+
+function startReward(){reward={t:0};rwA=PI/6+.001;rwCi=-1;rwPlay=true;review=false;PP.textContent='Ⅱ Pause';RV.textContent='Review the three positions';PP.classList.remove('hidden');PBS.classList.remove('hidden');upd()}
+function start(done){active=true;clearTimeout(T6);phi=PMIN;ghosts=[pose(STOPS[0])];solved=[false,false,false];errs=[0,0,0];sw=[null,null,null];flash=null;reward=null;review=false;ANS=false;drag=null;PBS.classList.add('hidden');
+ if(done){ghosts=STOPS.map(pose);solved=[true,true,true];ANS=true;phi=PMAX;startReward()}
+ upd();W=0;cancelAnimationFrame(raf);last=performance.now();raf=requestAnimationFrame(frame)}
+function stop(){active=false;clearTimeout(T6);cancelAnimationFrame(raf)}
+return {start,stop,dbg:(w)=>ghosts.map(ps=>ps&&X(w?ps.C:ps.V[ps.ctr]))};
+}
+
+const E6=E6make($('e6'),{setTodo:t=>{E6T=t},fb:(m,c,h)=>{if(!m)hideFb();else setFb(m,c,h)},onSolved:()=>{hideFb();setNext(1);showKey(6)}});
+{const _g6=go;go=function(k){E6.stop();_g6(k);$('e6').classList.toggle('hidden',k!==6);if(k===6){E6.start(!!nok);if(nok){hideFb();showKey(6)}}}}
 requestAnimationFrame(fr);go(startScreen());
 <\/script></body></html></script>
 <script type="text/plain" id="L3"><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Shapes of Constant Width – Lesson 3</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Shapes of Constant Width (EN)_final</title>
 <style>
 :root{--bg:#f7f8fc;--card:#fff;--ink:#10152f;--mut:#626986;--line:#dce0ec;--acc:#1738e8;--accbg:#eef1ff;--gr:#eef1ff;--ok:#e6ffb3;--okb:#8bc923;--warn:#fff2df;--warnb:#ed8a31;--lime:#dfff54;--coral:#ff6b52;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1226;--card:#181c38;--ink:#eef0ff;--mut:#9aa2c8;--line:#2a3060;--acc:#8fa1ff;--accbg:#232a5c;--gr:#1d2248;--ok:#223d12;--okb:#6aa31e;--warn:#40290f;--warnb:#d98129;color-scheme:dark}}
@@ -1162,17 +1410,17 @@ main .ctl{margin-bottom:14px!important}
 .key b em{font-style:normal;color:#fff}
 .trow .qh{flex:1;min-width:0}
 #lesson .trow h1#t{font-size:clamp(22px,2.4vw,28px)!important;font-weight:650!important;letter-spacing:-.2px!important;line-height:1.28!important;margin:0!important}
-#t b,#t .hl{color:#dfff54;font-weight:inherit}#t .oic{vertical-align:-8px}#t .oic canvas{width:36px!important;height:36px!important}
+#t b,#t .hl{color:#dfff54;font-weight:inherit}#t .oic{vertical-align:-6px;line-height:0}#t .oic canvas{width:32px!important;height:32px!important}
 .qh .lead{margin:0 0 6px!important;font-size:17px!important}.qh .lead.sub{margin:8px 0 0!important}
 #q>legend{display:none!important}
-.trow{position:relative}.trow .prg{position:absolute!important;right:0;top:0}.trow .qh{width:100%}
+.trow{position:relative}.trow .prg{position:absolute!important;right:0;top:0}.trow .qh{width:100%;padding-top:26px;box-sizing:content-box}
 #q .opt{padding-right:46px!important}#q.thq .opt{padding-left:46px!important}
 #lesson>#todo{margin:6px 0 12px!important;flex:none!important;min-height:0}
 #q .opt{font-weight:700!important;font-size:16px!important}
 #q>#todo{min-height:42px;white-space:pre-line}.ctl #wtd{margin:0!important;flex:1 1 auto;min-height:0}#q>#todo.hidden{display:block!important;visibility:hidden}
-.trow{align-items:flex-start}.trow .qh{display:flex;flex-direction:column;justify-content:flex-end;min-height:104px}.trow .qh #t{flex:none!important}
+.trow{align-items:flex-start}.trow .qh{display:flex;flex-direction:column;justify-content:flex-end;min-height:78px}.trow .qh #t{flex:none!important}
 #lesson>#todo,#row4>#todo{min-height:20px}#lesson>#todo.hidden,#row4>#todo.hidden{display:block!important;visibility:hidden}
-</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet"></head><body class="dk">
+#cxm .ahd{display:block;font-size:18px;font-weight:800;color:#ffd166;margin-bottom:4px;letter-spacing:0;text-transform:none}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet"></head><body class="dk">
 <header><div class="brand"><span class="lnum">03</span><span>Shapes of Constant Width</span><span id="ht">Bike Ride</span></div><div class="hrt"><button type="button" class="hb" id="hb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Home</button></div></header>
 <main>
 <section id="lesson">
@@ -1207,7 +1455,7 @@ const SC=[null,
 {t:'Tipping over a corner'},
 {t:'Can we avoid the ups and downs?'},
 {t:'A bike with no ups and downs',ld:'And yet someone has built a bike like this. Its rider doesn\'t rise or fall while riding.'}];
-const setFb=(m,cls,hd,an)=>{lastFb={m,cls,hd,an};const e=$('fb');e.textContent=m;e.className='fb '+cls;renderFb(e.innerHTML.replace('[[VIDEO]]','<a href="https://www.youtube.com/watch?v=GFa77G9HTj0" target="_blank" rel="noopener">video by The Q</a>'),cls,hd,an);okfb(m,cls);if(an&&!ld2)openH(an)};
+const setFb=(m,cls,hd,an)=>{lastFb={m,cls,hd,an};const e=$('fb');e.textContent=m;e.className='fb '+cls;renderFb(e.innerHTML.replace('[[VIDEO]]','<a href="https://www.youtube.com/watch?v=GFa77G9HTj0" target="_blank" rel="noopener">video by The Q</a>'),cls,hd,an);okfb(m,cls);if(an){$('fb').className='fb hidden';closeFS()}if(an&&!ld2)openH(an)};
 function setNext(v){nok=v;$('next').disabled=!v;$('next').textContent=(V===N&&v)?'Back to course page':'Continue ›';syncFb();prog();if(!ld2)saveSt()}
 function prog(){const d=V?V-1+(nok?1:0):0;$('pf').style.width=(d/N*100)+'%';if(V&&nok)sav(d)}
 function ask(key,text,opts){const q=$('q');q.innerHTML='<legend>'+text+'</legend>'+opts.map((o,i)=>'<button type="button" class="opt" data-i="'+i+'"><span class="lt2">'+'ABCD'[i]+'</span><span>'+o+'</span></button>').join('');q.classList.remove('hidden');
@@ -1229,29 +1477,29 @@ function ask4(){const P=pts('g3'),pth=(s,cx,cy)=>P.map(([x,y],i)=>(i?'L':'M')+(c
   'The two wheels are different sizes.'+W2(tri(20,24,46)+tri(11,62,46))];
  const q=$('q');q.className='q4';q.innerHTML='<legend>Apart from the wheels, how is this bike different from an <span class="hl">ordinary bike</span>?</legend>'+O.map((t,i)=>'<button type="button" class="opt" data-i="'+i+'" aria-pressed="false"><span class="ot3">'+t+'</span></button>').join('')+'<div class="chkr"><button type="button" class="sec" id="chk" disabled>Check</button></div>';
  q.querySelector('legend').after($('todo'));
- q.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(fl.lk)return;const i=+b.dataset.i;let s=Array.isArray(A.p4)?A.p4.slice():[];s=s.includes(i)?s.filter(x=>x!==i):[...s,i].sort();A.p4=s;sync5();saveSt()});
+ q.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(fl.lk)return;const i=+b.dataset.i;let s=Array.isArray(A.p4)?A.p4.slice():[];s=s.includes(i)?s.filter(x=>x!==i):[...s,i].sort();A.p4=s;fl.pk=null;fl.part=0;sync5();saveSt()});
  $('chk').onclick=()=>{if(fl.lk||!(Array.isArray(A.p4)&&A.p4.length))return;fl.dp4=1;EV[5]();saveSt()}}
-function sync5(){const s=Array.isArray(A.p4)?A.p4:[];$('q').querySelectorAll('.opt').forEach(b=>{const on=s.includes(+b.dataset.i);b.classList.toggle('sel',on);b.setAttribute('aria-pressed',on);b.disabled=!!fl.lk});const k=$('chk');if(k){k.disabled=!s.length||!!fl.lk;k.parentNode.classList.toggle('hidden',!!fl.lk)}}
-const KY={3:[['KEY IDEA','The wheel turns around its corner like a compass around its point: that corner stays put. Every other point moves along an arc around it, so <span>its height changes</span>.','','<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.6 1 1.3 1 2.1h5c0-.8.3-1.5 1-2.1A6 6 0 0 0 12 3z"/></svg>']],4:[['KEY IDEA','<span>No point of a rolling Reuleaux triangle stays at the same height.</span> As a circle rolls, its center always stays at the same height. That\'s why ordinary wheels are round.','','<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.6 1 1.3 1 2.1h5c0-.8.3-1.5 1-2.1A6 6 0 0 0 12 3z"/></svg>']],5:[['NEXT UP','Is the Reuleaux triangle the only shape like this?','Coming up in the course.','<span style="font:800 28px system-ui;color:#10152f">?</span>']]};
+function sync5(){const s=Array.isArray(A.p4)?A.p4:[];$('q').querySelectorAll('.opt').forEach(b=>{const on=s.includes(+b.dataset.i);b.classList.toggle('sel',on);b.classList.toggle('okm',!fl.lk&&!!fl.pk&&fl.pk.includes(+b.dataset.i)&&on);b.setAttribute('aria-pressed',on);b.disabled=!!fl.lk});const k=$('chk');if(k){k.disabled=!s.length||!!fl.lk;k.parentNode.classList.toggle('hidden',!!fl.lk)}}
+const KY={3:[['KEY IDEA','The wheel turns around its corner like a compass around its point: that corner stays put. Every other point moves along an arc around it, so <span>its height changes</span>.','','<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.6 1 1.3 1 2.1h5c0-.8.3-1.5 1-2.1A6 6 0 0 0 12 3z"/></svg>']],4:[['KEY IDEA','<span>No point of a rolling Reuleaux triangle stays at the same height.</span> A rolling circle has such a point: its center. That\'s what makes the circle such a good wheel.','','<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10152f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.7.6 1 1.3 1 2.1h5c0-.8.3-1.5 1-2.1A6 6 0 0 0 12 3z"/></svg>']],5:[['NEXT UP','Is the Reuleaux triangle the only shape like this?','Coming up in the course.','<span style="font:800 28px system-ui;color:#10152f">?</span>']]};
 function showKey(k){(KY[k]||[]).forEach((d,i)=>{const s=i?'2':'';$('ks'+s).textContent=d[0];$('kb'+s).innerHTML=d[2]?d[1]+'<br><em>'+d[2]+'</em>':d[1];$('kb'+s).classList.toggle('plain',!d[2]);$('ki'+s).innerHTML=d[3];$('key'+s).classList.remove('hidden')})}
 function showSum(){showKey(5);$('rpl').classList.remove('hidden')}
 function askTip(){const S=d=>'<svg class="th" width="36" height="28" viewBox="0 7 36 28">'+d+'</svg>',G='fill="none" stroke="rgba(154,162,200,.5)" stroke-width="1"',Rd='fill="none" stroke="#ff6b52" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 2.4"';
- askG('pt','While each wheel <span class="hl">tips over a corner</span>, what path does the little rider follow?',()=>['A part of a circle.'+S('<circle cx="18" cy="21" r="12" '+G+'/><path d="M7.6 15A12 12 0 0 1 28.4 15" '+Rd+'/>'),'A part of an oval.'+S('<ellipse cx="18" cy="20" rx="15" ry="8" '+G+'/><path d="M5 16A15 8 0 0 1 31 16" '+Rd+'/>'),'Two segments meeting at a point.'+S('<path d="M3 29L18 19L33 29" '+G+'/><path d="M10.5 24L18 19L25.5 24" '+Rd+'/>')]);$('q').className='q3t'}
+ askG('pt','The front wheel is <span class="hl">stuck to the ground</span>.<br>What path does the little rider follow?',()=>['A part of a circle.'+S('<circle cx="18" cy="21" r="12" '+G+'/><path d="M7.6 15A12 12 0 0 1 28.4 15" '+Rd+'/>'),'A part of an oval.'+S('<ellipse cx="18" cy="20" rx="15" ry="8" '+G+'/><path d="M5 16A15 8 0 0 1 31 16" '+Rd+'/>'),'Two segments meeting at a point.'+S('<path d="M3 29L18 19L33 29" '+G+'/><path d="M10.5 24L18 19L25.5 24" '+Rd+'/>')]);$('q').className='q3t'}
 function retryQ(){fl.lk=0;$('q').querySelectorAll('button').forEach(x=>x.disabled=x.classList.contains('sel'))}
 function doneQ(){fl.lk=1;$('q').querySelectorAll('button').forEach(x=>x.disabled=true)}
 const H2=(a,b)=>{fl.e=(fl.e||0)+1;return fl.e===1?a:b};
-const EV={1:()=>{if(A.p1===1){setFb('','ok','That\'s right!');doneQ();setNext(1)}else{setFb(H2('Take a close look at the little rider\'s trail.','Look at the lowest point of the motion. Does the little rider bounce sharply, like a ball off the ground, or move smoothly from going down to going up?'),'warn');retryQ();setNext(0)}},
-2:()=>{if(A.pc===1){doneQ();fl.wt=1;$('fb').className='fb hidden';closeFS();ax=VG3[0][0];ay=VG3[0][1];tr=[];trD=[];rg={};U=true;play=true;$('play').textContent='Ⅱ Pause'}else{setFb(H2('Try attaching the frame at different points on the edge of the wheel.','Attach the frame at a corner. Watch the trail while that corner is at the top.'),'warn');retryQ();setNext(0);const M=[[0,0],null,[0,Math.sqrt(3)-1],null][A.pc];if(M){ax=M[0];ay=M[1];tr=[];trD=[];rg={};U=true;play=true;$('play').textContent='Ⅱ Pause'}}},
+const EV={1:()=>{if(A.p1===1){setFb('','ok','That\'s right!');doneQ();setNext(1)}else{fl.e=(fl.e||0)+1;setFb(A.p1===0?'Watch the little rider\'s trail. Does it stay at the same height?':'Look at the lowest point of the motion. Does the little rider bounce sharply, like a ball off the ground, or move smoothly from going down to going up?','warn');retryQ();setNext(0)}},
+2:()=>{if(A.pc===1){doneQ();fl.wt=1;setTimeout(()=>{if(V===2&&!nok&&fl.wt){fl.wt=0;fl.ok2=1;setFb('While a corner is at the top, it glides along at the same height. But that lasts only part of the ride. The solid red line in the animation shows where the little rider stays at the same height.','ok','That\'s right!');setNext(1);saveSt()}},1500);$('fb').className='fb hidden';closeFS();ax=VG3[0][0];ay=VG3[0][1];tr=[];trD=[];rg={};U=true;play=true;$('play').textContent='Ⅱ Pause'}else{setFb(H2('Try attaching the frame at different points on the edge of the wheel.','Attach the frame at a corner. Watch the trail while that corner is at the top.'),'warn');retryQ();setNext(0);const M=[[0,0],null,[0,Math.sqrt(3)-1],null][A.pc];if(M){ax=M[0];ay=M[1];tr=[];trD=[];rg={};U=true;play=true;$('play').textContent='Ⅱ Pause'}}},
 3:()=>{if(A.pt===0){setFb('','ok','That\'s right!');doneQ();setNext(1);showKey(3);U=true;play=true;$('play').textContent='Ⅱ Pause'}else{setFb(A.pt===1?(fl.e=(fl.e||0)+1,'Look at the corner touching the ground: it stays put. Does the red dot stay at the same distance from it?'):A.pt===2?(fl.e=(fl.e||0)+1,'Look closely at the top of the trail. Is there a sharp corner?'):H2('Watch the trail while the wheels tip back and forth.','The corner touching the ground stays put. How does a point move when the wheel turns around it?'),'warn');retryQ();setNext(0)}},
 4:()=>{if(A.p2===3){setFb('','ok','That\'s right!');doneQ();setNext(1);showKey(4)}else{{const M=[[0,0],[0,Math.sqrt(3)-1],[0,-.45]][A.p2];if(M){ax=M[0];ay=M[1];tr=[];trD=[];rg={};U=true;play=true;$('play').textContent='Ⅱ Pause'}}setFb(A.p2===1?(fl.e=(fl.e||0)+1,'A point on the edge rises and falls too. Is there a point that never does?'):H2('Compare the trails for different positions of the red dot. Is any of them a straight line?','Try the center and a point closer to the edge. Does either one stay at a constant height?'),'warn');retryQ();setNext(0)}},
-5:()=>{const s=Array.isArray(A.p4)?A.p4:[],h=i=>s.includes(i);if(h(1)&&h(2)&&!h(0)&&!h(3)){fl.v=1;fl.lk=1;setFb('','ok','That\'s right!','ok');sync5();showSum();setNext(1)}else{fl.e=(fl.e||0)+1;if(h(0))setFb('Remember the previous screen: no point of a Reuleaux triangle stays at the same height as it rolls.','warn',null,'pts');else if(h(3))setFb('Different sizes don\'t help. Each wheel\'s center still rises and falls, so the frame does too.','warn',null,'size');else setFb('You\'re on the right track, but one more answer is correct. '+(h(1)?'The frame stays level, but the centers of the wheels go up and down. What must the parts that hold the wheels be able to do?':'Think back to the board in Lesson 1. How did it stay level?'),'warn',null,h(1)?'board2':'board');setNext(0)}}};
+5:()=>{const s=Array.isArray(A.p4)?A.p4:[],h=i=>s.includes(i);if(h(1)&&h(2)&&!h(0)&&!h(3)){fl.v=1;fl.lk=1;setFb('','ok','That\'s right!','ok');sync5();showSum();setNext(1)}else{fl.e=(fl.e||0)+1;fl.pk=s.filter(i=>i===1||i===2);fl.part=0;if(h(0))setFb('Remember the previous screen: no point of a Reuleaux triangle stays at the same height as it rolls.','warn',null,'pts');else if(h(3))setFb('With different sizes, the two centers rise and fall at different moments. The little rider still rises and falls.','warn',null,'size');else{setFb('One correct answer is still missing. '+(h(1)?'The frame stays level, but the centers of the wheels go up and down. What must the parts that hold the wheels be able to do?':'Think back to the board in Lesson 1. How did it stay level?'),'warn','Almost there!',h(1)?'board2':'hinge');fl.pk=s.slice();fl.part=1}sync5();setNext(0)}}};
 function ask1(){const q=$('q');q.className='prof';q.innerHTML='<legend>How will the little rider move?</legend><div class="pg">'+'ABC'.split('').map((l,i)=>'<button type="button" class="opt" data-i="'+i+'" aria-label="Path '+l+'"><canvas class="mc" width="300" height="100" data-p="'+i+'"></canvas><span class="lt">'+l+'</span></button>').join('')+'</div>';
  q.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(fl.v&&EV[V]){A['p1']=+b.dataset.i;q.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));EV[V]();saveSt();return}if(fl.lk)return;A.p1=+b.dataset.i;fl.dp1=1;q.querySelectorAll('button').forEach(x=>{x.classList.toggle('sel',x===b)});ans('p1')})}
 function askG(key,leg,items){const q=$('q');q.className='q4'+(key==='pc'||key==='p2'?' tf':'');const P15=pts('g3').map(([x,y])=>[x*15+20,y*15+22]),xs=P15.map(p=>p[0]),ys=P15.map(p=>p[1]),VB=(Math.min(...xs)-6).toFixed(1)+' '+(Math.min(...ys)-6).toFixed(1)+' '+(Math.max(...xs)-Math.min(...xs)+12).toFixed(1)+' '+(Math.max(...ys)-Math.min(...ys)+12).toFixed(1),pp=pts('g3').map(([x,y],i)=>(i?'L':'M')+(x*15+20).toFixed(1)+' '+(y*15+22).toFixed(1)).join('')+'Z',TH=(dy)=>'<svg class="th" width="36" height="36" viewBox="'+VB+'"><path d="'+pp+'" fill="#dfff54" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="'+(22+dy*15)+'" r="4.2" fill="#ff6b52" stroke="#fff" stroke-width="1.3"/></svg>',N2=items(TH).map(t=>(key==='pc'||key==='p2')&&t.indexOf('<svg')<0?t+'<span class="th thp" aria-hidden="true"></span>':t);q.innerHTML='<legend>'+leg+'</legend>'+N2.map((t,i)=>'<button type="button" class="opt" data-i="'+i+'"><span class="ot3">'+t+'</span></button>').join('');
  ;
  q.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(fl.v&&EV[V]){A[key]=+b.dataset.i;q.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));EV[V]();saveSt();return}if(fl.lk)return;A[key]=+b.dataset.i;fl['d'+key]=1;q.querySelectorAll('button').forEach(x=>{x.classList.toggle('sel',x===b)});ans(key)})}
-function ask2c(){askG('pc','Where should you attach the frame so the little rider<br>stays at the same height <span class="hl">for a while</span>?',TH=>['The center.'+TH(0),'A corner.'+TH(-1),'The midpoint of an arc.'+TH(Math.sqrt(3)-1),'There\'s no such point.'])}
-function ask2g(){askG('p2','Where should the frame be attached so the little rider stays at the same height <span class="hl">the whole time</span>?',TH=>['At the centers.'+TH(0),'On the edges.'+TH(Math.sqrt(3)-1),'At points near the centers of the shapes.'+TH(-.45),'Nowhere. The little rider always rises and falls.'])}
+function ask2c(){askG('pc','The little rider wants to stay at the same height, at least <span class="hl">for a while</span>.<br>Where should you attach the frame?',TH=>['The center.'+TH(0),'A corner.'+TH(-1),'The midpoint of an arc.'+TH(Math.sqrt(3)-1),'There\'s no such point.'])}
+function ask2g(){askG('p2','The little rider wants to stay at the same height <span class="hl">the whole time</span>.<br>Where should you attach the frame?',TH=>['At the centers.'+TH(0),'On the edges.'+TH(Math.sqrt(3)-1),'At points near the centers of the shapes.'+TH(-.45),'Nowhere. The little rider always rises and falls.'])}
 function drawMini(k,t){const x=k.getContext('2d'),W=k.width,H=k.height,i=+k.dataset.p,T=((t/1000)%5)/5,L=34,Wd=W-2*L,y0=54,ch=Wd/3,hh=13.5,rho=(ch*ch/4+hh*hh)/(2*hh),fy=u=>{if(i===0)return 0;if(i===1)return -6.75*Math.sin(u*2*PI*3);const f3=(u*3)%1,xx=(f3-.5)*ch;return -(Math.sqrt(rho*rho-xx*xx)-(rho-hh))+hh*.55};
  x.clearRect(0,0,W,H);x.strokeStyle='#8fa1ff';x.lineWidth=2.5;x.lineCap='round';x.beginPath();x.moveTo(8,H-12);x.lineTo(W-8,H-12);x.stroke();
  x.setLineDash([7,6]);x.lineWidth=2.4;x.strokeStyle='rgba(154,162,200,.4)';x.beginPath();for(let j=0;j<=120;j++){const u=j/120,px=L+Wd*u,py=y0+fy(u);j?x.lineTo(px,py):x.moveTo(px,py)}x.stroke();
@@ -1271,18 +1519,34 @@ function drawHint(k,t){const g=k.getContext('2d'),W=k.clientWidth,H=k.clientHeig
  rd=(x,y)=>{g.fillStyle='#ff6b52';g.beginPath();g.arc(x,y,5,0,7);g.fill();g.strokeStyle='#fff';g.lineWidth=1.5;g.stroke()};
  if(an==='pts'){const gp=10,w=(W-gp)/2;for(const[j,P]of[[0,[0,0]],[1,[0,-.5]]]){const x=j*(w+gp);win(x,w);const s=Math.min(40,(H-30)/1.8,(w-24)/(3*PER+1.8)),a=u*2*PI,x0=x+12+.9*s;g.save();g.translate(0,Math.min(0,H/2+.95*s-gr));gnd(x+8,x+w-8);trail(x0,s,a,P);const p=pos(x0,s,a,P);tri(p[0],p[1],a,s);rd(p[2],p[3]);g.restore()}}
  else if(an==='ok'){win(0,W);gnd(8,W-8);const s=Math.min(32,(H-95)/2.9),x0b=14+.9*s,wb=2.9*s,x0f=x0b+wb,L=Math.max(30,W-14-.9*s-x0f),D=u*L,top=gr-Math.sqrt(3)*s,hs=s*.95,l=s*.62;
-  const ys=top-2;if(D>0){g.save();g.strokeStyle='#ff6b52';g.lineWidth=2.4;g.lineCap='round';g.setLineDash([6,5]);g.beginPath();g.moveTo(x0b+.4*wb,ys-hs);g.lineTo(x0b+.4*wb+D,ys-hs);g.stroke();g.restore()}
+  const ys=top-2;if(D>0){g.save();g.strokeStyle='#ff6b52';g.lineWidth=2.4;g.lineCap='round';g.setLineDash([6,5]);g.beginPath();g.moveTo(x0b+.4*wb,ys-8);g.lineTo(x0b+.4*wb+D,ys-8);g.stroke();g.restore()}
   const a=angD(D/s),p1=pos(x0b,s,a,[0,0]),p2=pos(x0f,s,a,[0,0]);tri(p1[0],p1[1],a,s);tri(p2[0],p2[1],a,s);
-  g.save();g.strokeStyle='#3b72ff';g.lineCap='round';g.lineJoin='round';g.lineWidth=4;g.beginPath();g.moveTo(p1[0]-.6*s,ys);g.lineTo(p2[0]+.6*s,ys);const fx=p1[0]+.4*(p2[0]-p1[0]);g.moveTo(fx,ys);g.lineTo(fx,ys-hs);g.stroke();
+  g.save();g.strokeStyle='#3b72ff';g.lineCap='round';g.lineJoin='round';const fx=p1[0]+.4*(p2[0]-p1[0]);g.fillStyle='#3b72ff';g.beginPath();g.roundRect(p1[0]-.9*s,ys-6,p2[0]-p1[0]+1.8*s,6,3);g.fill();
   const kn=[];g.lineWidth=3;for(const p of[p1,p2]){const d=p[1]-ys,kx=Math.sqrt(Math.max(0,l*l-d*d/4));g.beginPath();g.moveTo(p[0],ys);g.lineTo(p[0]+kx,ys+d/2);g.lineTo(p[0],p[1]);g.stroke();kn.push([p[0]+kx,ys+d/2])}g.restore();
   for(const k2 of kn){g.fillStyle='#11152a';g.beginPath();g.arc(k2[0],k2[1],3.6,0,7);g.fill();g.strokeStyle='#fff';g.lineWidth=1.5;g.stroke()}
-  rd(p1[0],p1[1]);rd(p2[0],p2[1]);const oc=c;c=g;man(fx,ys-hs);c=oc}
+  rd(p1[0],p1[1]);rd(p2[0],p2[1]);const oc=c;c=g;man(fx,ys-6);c=oc}
  else if(an==='size'){win(0,W);gnd(8,W-8);const s1=Math.min(38,(H-95)/2.7),s2=s1*.6,x0b=14+.9*s1,wb=2.7*s1,x0f=x0b+wb,L=Math.max(30,W-14-.9*s2-x0f),D=u*L,
-  sad=d=>{const p1=pos(x0b,s1,angD(d/s1),[0,0]),p2=pos(x0f,s2,angD(d/s2),[0,0]),dx=p2[0]-p1[0],dy=p2[1]-p1[1],ln=Math.hypot(dx,dy),nx=dy/ln,ny=-dx/ln,h=s1*.95;return{p1,p2,f:[p1[0]+dx*.4,p1[1]+dy*.4],s:[p1[0]+dx*.4+nx*h,p1[1]+dy*.4+ny*h]}};
+  sad=d=>{const p1=pos(x0b,s1,angD(d/s1),[0,0]),p2=pos(x0f,s2,angD(d/s2),[0,0]),dx=p2[0]-p1[0],dy=p2[1]-p1[1],ln=Math.hypot(dx,dy),nx=dy/ln,ny=-dx/ln,h=8;return{p1,p2,f:[p1[0]+dx*.4,p1[1]+dy*.4],s:[p1[0]+dx*.4+nx*h,p1[1]+dy*.4+ny*h]}};
   if(D>0){g.save();g.strokeStyle='#ff6b52';g.lineWidth=2.4;g.lineCap='round';g.setLineDash([6,5]);g.beginPath();const n=Math.max(2,Math.ceil(D/2));for(let i=0;i<=n;i++){const q=sad(D*i/n).s;i?g.lineTo(q[0],q[1]):g.moveTo(q[0],q[1])}g.stroke();g.restore()}
   const S=sad(D),a1=angD(D/s1),a2=angD(D/s2);tri(S.p1[0],S.p1[1],a1,s1);tri(S.p2[0],S.p2[1],a2,s2);
-  g.save();g.strokeStyle='#3b72ff';g.lineWidth=4;g.lineCap='round';g.beginPath();g.moveTo(S.p1[0],S.p1[1]);g.lineTo(S.p2[0],S.p2[1]);g.moveTo(S.f[0],S.f[1]);g.lineTo(S.s[0],S.s[1]);g.stroke();g.restore();
-  rd(S.p1[0],S.p1[1]);rd(S.p2[0],S.p2[1]);const oc=c;c=g;man(S.s[0],S.s[1]);c=oc}
+  {const an2=Math.atan2(S.p2[1]-S.p1[1],S.p2[0]-S.p1[0]),Ls=Math.hypot(S.p2[0]-S.p1[0],S.p2[1]-S.p1[1]);g.save();g.translate(S.p1[0],S.p1[1]);g.rotate(an2);g.fillStyle='#3b72ff';g.beginPath();g.roundRect(-.7*s1,-3,Ls+.7*s1+.7*s2,6,3);g.fill();g.restore()}
+  rd(S.p1[0],S.p1[1]);rd(S.p2[0],S.p2[1]);const oc=c;c=g;{const an2=Math.atan2(S.p2[1]-S.p1[1],S.p2[0]-S.p1[0]);g.save();g.translate(S.f[0]+Math.sin(an2)*3,S.f[1]-Math.cos(an2)*3);g.rotate(an2);man(0,0);g.restore()}c=oc}
+ else if(an==='hinge'){win(0,W);gnd(8,W-8);const s=Math.min(32,(H-95)/2.9),x0b=14+.9*s+W*.08,wb=2.9*s,x0f=x0b+wb,L=Math.max(30,W-14-.9*s-x0f-W*.08),uS=.18,D=u<uS?0:(u-uS)/(1-uS)*L,top=gr-Math.sqrt(3)*s,l=s*.62,a=angD(D/s),p1=pos(x0b,s,a,[0,0]),p2=pos(x0f,s,a,[0,0]);
+  const fall=Math.min(1,u/uS),ef=fall*fall,yb=(p)=>(top-2)*(1-ef)+(p[1]-5)*ef,y1=yb(p1),y2=yb(p2);
+  tri(p1[0],p1[1],a,s);tri(p2[0],p2[1],a,s);
+  const bx1=p1[0]-.9*s,bx2=p2[0]+.9*s,yat=x=>y1+(y2-y1)*(x-p1[0])/(p2[0]-p1[0]),fx=p1[0]+.4*(p2[0]-p1[0]);
+  if(D>0){g.save();g.strokeStyle='#ff6b52';g.lineWidth=2.4;g.lineCap='round';g.setLineDash([6,5]);g.beginPath();const n=Math.max(2,Math.ceil(D/2));for(let i=0;i<=n;i++){const d=D*i/n,aa=angD(d/s),q1=pos(x0b,s,aa,[0,0]),q2=pos(x0f,s,aa,[0,0]),xx=q1[0]+.4*(q2[0]-q1[0]),yy=(q1[1]-5)+.4*((q2[1]-5)-(q1[1]-5))-8;i?g.lineTo(xx,yy):g.moveTo(xx,yy)}g.stroke();g.restore()}
+  g.save();g.translate(0,0);const ang2=Math.atan2(y2-y1,p2[0]-p1[0]);g.fillStyle='#3b72ff';g.save();g.translate(p1[0],y1);g.rotate(ang2);g.beginPath();g.roundRect(-.9*s,-6,(p2[0]-p1[0])/Math.cos(ang2)+1.8*s,6,3);g.fill();g.restore();
+  const kn=[];g.strokeStyle='#3b72ff';g.lineCap='round';g.lineJoin='round';g.lineWidth=3;for(const[p,yy]of[[p1,y1],[p2,y2]]){const d=p[1]-yy,kx=Math.sqrt(Math.max(0,l*l-d*d/4));g.beginPath();g.moveTo(p[0],yy);g.lineTo(p[0]+kx,yy+d/2);g.lineTo(p[0],p[1]);g.stroke();kn.push([p[0]+kx,yy+d/2])}g.restore();
+  for(const k2 of kn){g.fillStyle='#11152a';g.beginPath();g.arc(k2[0],k2[1],3.6,0,7);g.fill();g.strokeStyle='#fff';g.lineWidth=1.5;g.stroke()}
+  rd(p1[0],p1[1]);rd(p2[0],p2[1]);const oc=c;c=g;g.save();g.translate(fx,yat(fx)-6);g.rotate(ang2);man(0,0);g.restore();c=oc}
+ else if(an==='board2'){win(0,W);gnd(8,W-8);const s=Math.min(34,(H-90)/1.75,W/11),gp=Math.max(3.2*s,Math.min(4.2*s,W*.3)),x0=W*.08+2.2*s,top=gr-Math.sqrt(3)*s,e0=.55*gp+.12*s,uA=.46,uB=.6,uC=.78,D=Math.min(u,uA)/uA*e0,a=angD(D/s),cxs=[];
+  for(const xo of[x0,x0+gp]){trail(xo,s,a,[0,0]);const p=pos(xo,s,a,[0,0]);tri(p[0],p[1],a,s);cxs.push(p[0]);rd(p[2],p[3])}
+  const r0=x0+advA(0)*s,Lb=gp+4.4*s,c0x=r0-2*s+2*D+Lb/2,c0y=top-3,pv=[cxs[1],top],th1=Math.atan2(gr-top,Math.max(r0-2*s+2*e0+Lb-pv[0],1)),R2=(x,y,t)=>[pv[0]+(x-pv[0])*Math.cos(t)-(y-pv[1])*Math.sin(t),pv[1]+(x-pv[0])*Math.sin(t)+(y-pv[1])*Math.cos(t)];
+  let cx=c0x,cy=c0y,th=0;
+  if(u>uA){const vb=Math.min(1,(u-uA)/(uB-uA)),t1=th1*vb*vb,q=R2(r0-2*s+2*e0+Lb/2,c0y,t1);cx=q[0];cy=q[1];th=t1}
+  if(u>uB){const q=R2(r0-2*s+2*e0+Lb/2,c0y,th1),vc=Math.min(1,(u-uB)/(uC-uB)),e=1-Math.pow(1-vc,2),fx=pv[0]+1.1*s+Lb/2,fy=gr-3;cx=q[0]+(fx-q[0])*e;cy=q[1]+(fy-q[1])*e-Math.sin(vc*PI)*.4*s;th=th1*(1-e)}
+  g.save();g.translate(cx,cy);g.rotate(th);g.fillStyle='#3b72ff';g.beginPath();g.roundRect(-Lb/2,-3,Lb,6,3);g.fill();const oc=c;c=g;man(-.05*Lb,-3);c=oc;g.restore()}
  else{win(0,W);gnd(8,W-8);const s=Math.min(34,(H-90)/1.75,W/11),gp=Math.max(3.2*s,Math.min(5.5*s,W*.4)),L=Math.max(20,Math.min(W-28-1.8*s-gp,gp-1.8*s-6)),x0=(W-L-gp)/2,a=angD(u*L/s),top=gr-Math.sqrt(3)*s,cxs=[];
   for(const xo of[x0,x0+gp]){trail(xo,s,a,[0,0]);const p=pos(xo,s,a,[0,0]);tri(p[0],p[1],a,s);cxs.push(p[0]);rd(p[2],p[3])}
   const xa=cxs[0]-.9*s-6,xb2=cxs[1]+.9*s+6;g.fillStyle='#3b72ff';g.beginPath();g.roundRect(xa,top-6,xb2-xa,6,3);g.fill();const oc=c;c=g;man((xa+xb2)/2,top-6);c=oc}}
@@ -1314,7 +1578,7 @@ $('play').onclick=()=>{if(!U)return;play=!play;$('play').textContent=play?'Ⅱ P
 const kc=()=>Math.min(.8*380*.4/20,(cv.clientWidth-20)/60),Rp=()=>20/inf(sh).u*kc();
 function rc(k,v){const r=rg[k]=rg[k]||{lo:1e9,hi:-1e9};r.lo=Math.min(r.lo,v);r.hi=Math.max(r.hi,v)}
 const mh=(b,u)=>(b.hi-(ax*Math.sin(ang)+ay*Math.cos(ang)))*20/u;
-function rot(d){if(!U||!(V>=1&&V<=4))return;if(V===3){const T=tipRange(),na=Math.max(T.lo,Math.min(T.hi,ang+d));if(Math.abs(na-ang)<1e-9){if(play)TD=-TD;return}d=na-ang}if(sh==='g3')d*=10/(bnd(sh,ang).hi*20/inf(sh).u);const m=Math.max(1,Math.ceil(Math.abs(d)/.03)),h=d/m,u=inf(sh).u;
+function rot(d){if(!U||!(V>=1&&V<=4))return;if(V===3){const T=tipRange(),na=Math.max(T.lo,Math.min(T.hi,ang+d));if(Math.abs(na-ang)<1e-9){if(fl.ap){if(ang>=T.hi-1e-6)fl.ah=1;else if(fl.ah){fl.ap=0;play=false;$('play').textContent='▶ Play';return}}if(play)TD=-TD;return}d=na-ang}if(sh==='g3')d*=10/(bnd(sh,ang).hi*20/inf(sh).u);const m=Math.max(1,Math.ceil(Math.abs(d)/.03)),h=d/m,u=inf(sh).u;
  for(let i=0;i<m;i++){const b0=bnd(sh,ang);ang+=h;const b1=bnd(sh,ang);adv+=h*(b0.hi+b1.hi)/2;const ah=b1.hi*20/u,yy=mh(b1,u),s=MT()?yy+10:ah+10;rc(sh+'s',s);if(V===1)tpush(tr,adv,s,adv,20/u);if(V===3){fl.tl=Math.min(fl.tl??ang,ang);fl.th=Math.max(fl.th??ang,ang);if(false){const T=tipRange();if(fl.tl<=T.lo+1e-6&&fl.th>=T.hi-1e-6&&!fl.cc){fl.cc=1;const P2=fl.tp=fl.tp||[];if(!P2.some(p=>Math.hypot(p[0]-ax,p[1]-ay)<.1))P2.push([ax,ay])}if((fl.tp||[]).length>=3){fl.un=1;if(!fl.lk)$('q').querySelectorAll('button').forEach(x=>x.disabled=false);saveSt()}}}else if(MT()){const xx=adv+(ax*Math.cos(ang)-ay*Math.sin(ang));tpush(tr,xx,s,adv,20/u);tpush(trD,xx,yy,adv,20/u)}
   if(V===2&&!fl.un){fl.cr=(fl.cr||0)+Math.abs(h);if(fl.cr>=2.1&&!fl.cc){fl.cc=1;const T=fl.tp=fl.tp||[];if(!T.some(p=>Math.hypot(p[0]-ax,p[1]-ay)<.1))T.push([ax,ay])}
    if(VG3.some(v=>Math.hypot(v[0]-ax,v[1]-ay)<1e-6)&&yy>19.9){fl.fw=(fl.fw||0)+Math.abs(h);if(fl.fw>.3)fl.vx=1}
@@ -1336,7 +1600,7 @@ function setMount(x,y){const W=cv.clientWidth,H=cv.clientHeight,k=kc(),R=Rp(),[x
  if(vb){P0=vb.v[0];P1=vb.v[1]}else if(!ins){let m=null,md=1e9;for(const p of Pg){const d=Math.hypot(P0-p[0],P1-p[1]);if(d<md){md=d;m=p}}if(md*R>30)return;P0=m[0];P1=m[1]}
  if(pv&&Math.hypot(P0-pv[0],P1-pv[1])*R<15)return;
  ax=P0;ay=P1;tr=[];trD=[];rg={};fl.cr=0;fl.cc=0;fl.fw=0;if(V===3)fl.tl=fl.th=ang}
-cv.onpointerdown=e=>{if(!U||!(V>=1&&V<=4))return;const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(MT()&&nearMount(x,y)){mdg=true;if(play){play=false;$('play').textContent='▶ Play'}cv.setPointerCapture(e.pointerId);return}dg={x:e.clientX,x0:e.clientX,y0:e.clientY,mv:false};cv.setPointerCapture(e.pointerId)};
+cv.onpointerdown=e=>{if(!U||!(V>=1&&V<=4)||(V===3&&E3I))return;const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(MT()&&nearMount(x,y)){mdg=true;fl.gb=1;if(play){play=false;$('play').textContent='▶ Play'}cv.setPointerCapture(e.pointerId);return}dg={x:e.clientX,x0:e.clientX,y0:e.clientY,mv:false};cv.setPointerCapture(e.pointerId)};
 cv.onpointermove=e=>{const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(mdg){setMount(x,y);cv.style.cursor='grabbing';return}if(!dg){cv.style.cursor=MT()&&nearMount(x,y)?'move':U&&V>=1&&V<=4?'grab':'';return}const dx=e.clientX-dg.x;if(!dg.mv&&Math.abs(e.clientX-dg.x0)>5){dg.mv=true;if(play){play=false;$('play').textContent='▶ Play'}}if(dg.mv){dg.x=e.clientX;cv.style.cursor='grabbing';rot(dx/Math.max(20,dR()))}};
 cv.onpointerup=()=>{if(mdg)saveSt();mdg=false;dg=null;cv.style.cursor=''};cv.onpointercancel=()=>{mdg=false;dg=null};
 cv.onkeydown=e=>{if(e.key==='ArrowRight'){rot(.08);e.preventDefault()}if(e.key==='ArrowLeft'){rot(-.08);e.preventDefault()}};
@@ -1356,15 +1620,24 @@ function man(x,y){c.save();c.translate(x,y);
  c.fillStyle='rgba(255,255,255,.38)';c.beginPath();c.roundRect(-8.5,-43,5,19,2.5);c.fill();c.fillStyle='rgba(255,255,255,.55)';c.beginPath();c.ellipse(-3.6,-60,2.6,1.6,-.6,0,7);c.fill();c.restore()}
 function bike(W,H){const k=kc(),R=Rp(),gr=MT()?H-48:H*.84,b=bnd(sh,ang),ya=gr-b.hi*R,mt=MT(),[xl,xr]=WX(W,k),sft=(((V===3?tipRange().mid:adv)*R)%34+34)%34,mpL=mp(W,H,xl),yv=mt?mpL[1]:ya,
  mpR=mp(W,H,xr),cxF=mt?(mpL[0]+mpR[0])/2:W/2,jl=mt?mpL:[xl,yv],jr=mt?mpR:[xr,yv],P=(x,y)=>[cxF+x*k,yv-y*k],Sd=P(-8,10),Bb=P(-5.2,-1),ST=P(-7.4,5.2),HT=P(15.2,13.2),HB=P(16.6,9.9),SP2=P(-8.2,8),sad=(gr-Sd[1])/k;
- let dT=null;ground(W,H,gr,sft);if(!mt){c.save();c.setLineDash([6,5]);c.lineDashOffset=adv*R;const yl=gr-20*k;ln(0,yl,W,yl,K.mut,1.4);c.restore()}
+ let dT=null;ground(W,H,gr,sft);
+ let TX=0;if(V===3){const T=tipRange(),R0=R;TX=GD*28;
+  // gum spots: where the corners land (corner at ang=T.lo, adv=0)
+  const P0=pts(sh),s0=Math.sin(T.lo),q0=Math.cos(T.lo);let m0=-1e9,pc=null;for(const p of P0){const y=p[0]*s0+p[1]*q0;if(y>m0){m0=y;pc=p}}
+  const sNow=Math.sin(ang),qNow=Math.cos(ang),pN=pc;
+  for(const x0 of[xr]){const gx=x0-adv*R0+R0*(pc[0]*q0-pc[1]*s0),cxN=TX+x0+R0*(pN[0]*qNow-pN[1]*sNow),cyN=gr-bnd(sh,ang).hi*R0+R0*(pN[0]*sNow+pN[1]*qNow);
+   const stuck=!E3I||E3I.ph>0||ang>=T.lo-1e-6;
+   if(stuck&&Math.abs(cxN-gx)>1.5){c.save();c.fillStyle='#ff9ed2';c.beginPath();c.moveTo(gx-9,gr);c.quadraticCurveTo((gx+cxN)/2,gr-2,cxN-4,cyN);c.lineTo(cxN+4,cyN);c.quadraticCurveTo((gx+cxN)/2,gr+1,gx+9,gr);c.closePath();c.fill();c.restore()}
+   c.save();c.fillStyle='#ff9ed2';c.strokeStyle='#e45fa3';c.lineWidth=1.5;c.beginPath();c.ellipse(gx,gr-1,15,7,0,PI,2*PI);c.closePath();c.fill();c.stroke();c.fillStyle='rgba(255,255,255,.55)';c.beginPath();c.ellipse(gx-5,gr-4.5,4,1.6,0,0,7);c.fill();c.restore();
+   if(stuck){c.save();c.fillStyle='#ff9ed2';c.beginPath();c.arc(cxN,cyN,6,0,7);c.fill();c.restore()}}}if(!mt){c.save();c.setLineDash([6,5]);c.lineDashOffset=adv*R;const yl=gr-20*k;ln(0,yl,W,yl,K.mut,1.4);c.restore()}
  if(V===3){const T=tipRange(),u=inf(sh).u,o=(adv-T.mid)*R,a2=[];let av=0,prev=null;for(let a=T.lo;a<=T.hi+1e-9;a+=.004){const hh=bnd(sh,a).hi;if(prev!==null)av+=.004*(prev+hh)/2;prev=hh;if(a<(fl.tl??ang)-1e-6||a>(fl.th??ang)+1e-6)continue;const s1=Math.sin(a),q1=Math.cos(a),x=av+(ax*q1-ay*s1),y=(hh-(ax*s1+ay*q1))*20/u+10,l=a2[a2.length-1];a2.push([x,y,l?l[2]+Math.hypot((x-l[0])*20/u,y-l[1]):0,a])}
   tline(a2,x=>W/2-8*k+o+(x-adv)*R,y=>gr-y*k,K.coral,3,8,6);dT=(col,lw)=>tline(a2.map(p=>[p[0],p[1]-10]),x=>xl+(x-adv)*R,y=>gr-y*k,col,lw,2,5)}
  else{tdraw(tr,x=>W/2-8*k+(x-adv)*R,y=>gr-y*k,k,0,K.coral,V===1?3.6:3,8,6);if(mt)dT=(col,lw)=>tdraw(trD,x=>xl+(x-adv)*R,y=>gr-y*k,k,0,col,lw,2,5);
   if(V===2&&fl.ok2){c.save();c.strokeStyle=K.coral;c.lineWidth=3;c.lineCap='round';c.beginPath();for(let i=1;i<tr.length;i++){const p=tr[i-1],q2=tr[i];if(p[1]>29.9&&q2[1]>29.9){c.moveTo(W/2-8*k+(p[0]-adv)*R,gr-p[1]*k);c.lineTo(W/2-8*k+(q2[0]-adv)*R,gr-q2[1]*k)}}c.stroke();c.restore()}}
- shape(sh,xl,ya,ang,R);shape(sh,xr,ya,ang,R);
+ c.save();c.translate(TX,0);shape(sh,xl,ya,ang,R);shape(sh,xr,ya,ang,R);
  if(dT){dT('rgba(255,255,255,.75)',1.6);c.save();c.beginPath();const s1=Math.sin(ang),q1=Math.cos(ang);for(const x0 of[xl,xr]){pts(sh).forEach(([px,py],i)=>{const X=x0+R*(px*q1-py*s1),Y=ya+R*(px*s1+py*q1);i?c.lineTo(X,Y):c.moveTo(X,Y)});c.closePath()}c.clip();dT('#16226e',2.2);c.restore()}
  for(const x of[xl,xr])hub(x,ya);
- if(V===3&&(nok||(fl.e||0)>=2)){const P=pts(sh),s1=Math.sin(ang),q1=Math.cos(ang);let m=-1e9,pv=null;for(const p of P){const y=p[0]*s1+p[1]*q1;if(y>m){m=y;pv=p}}const vx=xl+R*(pv[0]*q1-pv[1]*s1),vy=ya+R*(pv[0]*s1+pv[1]*q1),pm=mp(W,H,xl),rr=Math.hypot(pm[0]-vx,pm[1]-vy),ci=cl=>{c.save();c.setLineDash([5,6]);c.strokeStyle=cl;c.lineWidth=1.6;c.beginPath();c.arc(vx,vy,rr,0,7);c.stroke();c.restore()};if(rr>3){ci('rgba(255,255,255,.6)');c.save();c.beginPath();for(const x0 of[xl,xr]){P.forEach(([px,py],i)=>{const X=x0+R*(px*q1-py*s1),Y=ya+R*(px*s1+py*q1);i?c.lineTo(X,Y):c.moveTo(X,Y)});c.closePath()}c.clip();ci('#16226e');c.restore()}dot(vx,vy,5,'#ffd166')}
+ if(V===3&&!E3I&&(nok||(fl.e||0)>=2)){const P=pts(sh),s1=Math.sin(ang),q1=Math.cos(ang);let m=-1e9,pv=null;for(const p of P){const y=p[0]*s1+p[1]*q1;if(y>m){m=y;pv=p}}const vx=xl+R*(pv[0]*q1-pv[1]*s1),vy=ya+R*(pv[0]*s1+pv[1]*q1),pm=mp(W,H,xl),rr=Math.hypot(pm[0]-vx,pm[1]-vy),ci=cl=>{c.save();c.setLineDash([5,6]);c.strokeStyle=cl;c.lineWidth=1.6;c.beginPath();c.arc(vx,vy,rr,0,7);c.stroke();c.restore()};if(rr>3){ci('rgba(255,255,255,.6)');c.save();c.beginPath();for(const x0 of[xl,xr]){P.forEach(([px,py],i)=>{const X=x0+R*(px*q1-py*s1),Y=ya+R*(px*s1+py*q1);i?c.lineTo(X,Y):c.moveTo(X,Y)});c.closePath()}c.clip();ci('#16226e');c.restore()}dot(vx,vy,5,'#ffd166')}
  const T=(p,q,w)=>{w=w||.8;ln(p[0],p[1],q[0],q[1],'#1d3fb8',w*k+1.6);ln(p[0],p[1],q[0],q[1],'#3b72ff',w*k);ln(p[0]-.1*k,p[1]-.22*k,q[0]-.1*k,q[1]-.22*k,'#8db8ff',Math.max(1,w*k*.22))},S=(p,q,w)=>{w=w||.6;ln(p[0],p[1],q[0],q[1],'#8d97bd',w*k+1.2);ln(p[0],p[1],q[0],q[1],'#d5dbf0',w*k);ln(p[0]-.1*k,p[1]-.2*k,q[0]-.1*k,q[1]-.2*k,'#fff',Math.max(1,w*k*.25))},cr=3.1*k,ph=adv*1.3,PD=[[Bb[0]+cr*Math.cos(ph),Bb[1]+cr*Math.sin(ph)],[Bb[0]-cr*Math.cos(ph),Bb[1]-cr*Math.sin(ph)]],cring=2.9*k;
  T(jl,Bb,.7);T(jl,ST,.65);T(Bb,SP2,.8);T(Bb,HB,.85);T(HT,HB,1);T(HB,jr,.75);
  const SP=P(-8.4,8.2),sy=Sd[1]+.55*k,sw=3.4*k,sx=Sd[0];
@@ -1382,9 +1655,8 @@ function bike(W,H){const k=kc(),R=Rp(),gr=MT()?H-48:H*.84,b=bnd(sh,ang),ya=gr-b.
  for(const q of PD){ln(Bb[0],Bb[1],q[0],q[1],'#c9d0e6',Math.max(2.5,.5*k));ln(q[0]-.9*k,q[1],q[0]+.9*k,q[1],'#d7dcee',Math.max(3,.55*k))}dot(Bb[0],Bb[1],3,'#aab4d8');
  man(Sd[0],Sd[1]+1.2);
  
- if(mt){for(const x of[xl,xr]){const p=mp(W,H,x);dot(p[0],p[1],7.5,K.coral);c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();c.arc(p[0],p[1],7.5,0,7);c.stroke()}}
- arrowU(Sd[0],Sd[1],gr,f(sad)+' cm');const r=rg[sh+'s'];
- lab('LITTLE RIDER\'S HEIGHT ABOVE THE GROUND',f(sad)+' cm',r&&r.hi>0?'range: about '+f(r.lo)+'–'+f(r.hi)+' cm':'')}
+ if(mt){if(V===2&&!fl.gb){const u=(performance.now()%1400)/1400;for(const x of[xl,xr]){const p=mp(W,H,x);c.save();c.globalAlpha=(1-u)*.9;c.strokeStyle=K.coral;c.lineWidth=3;c.beginPath();c.arc(p[0],p[1],9.5+u*20,0,7);c.stroke();c.restore()}}for(const x of[xl,xr]){const p=mp(W,H,x);dot(p[0],p[1],7.5,K.coral);c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();c.arc(p[0],p[1],7.5,0,7);c.stroke()}}
+ const r=rg[sh+'s'];if(V===2){arrowU(Sd[0],Sd[1],gr,f(sad)+' cm');lab('LITTLE RIDER\'S HEIGHT ABOVE THE GROUND',f(sad)+' cm',r&&r.hi>0?'range: about '+f(r.lo)+'–'+f(r.hi)+' cm':'')}else lab('','','');c.restore()}
 function draw(){const W=cv.clientWidth,H=cv.clientHeight,d=Math.min(devicePixelRatio||1,2);if(!V||!W||!H)return;if(cv.width!==Math.round(W*d)||cv.height!==Math.round(H*d)){cv.width=Math.round(W*d);cv.height=Math.round(H*d)}
  c.setTransform(d,0,0,d,0,0);c.clearRect(0,0,W,H);ovn=0;const cs=getComputedStyle($('stage'));for(const[a,v]of Object.entries({ink:'--ink',mut:'--mut',acc:'--acc',card:'--card',gr:'--gr',lime:'--lime',coral:'--coral'}))K[a]=cs.getPropertyValue(v).trim();
  if(V>=1&&V<=4)bike(W,H);const o=$('ov');while(o.children.length>ovn)o.lastChild.remove()}
@@ -1393,9 +1665,17 @@ function ui(){let t='',l=(SC[V]||{}).ld||'';
  else if(V===2){t='Drag a red dot to move the frame, then ride.';if(fl.wt){let run=0,ended=false;for(const p of tr){if(p[1]>29.9)run++;else{if(run>=12)ended=true;run=0}}if(ended){fl.wt=0;fl.ok2=1;setFb('While a corner is at the top, it glides along at the same height. But that lasts only part of the ride. The solid red line in the animation shows where the little rider stays at the same height.','ok','That\'s right!');setNext(1);saveSt()}}}
  else if(V===3)t='Drag a red dot to move the frame, then tip the wheels.';
  else if(V===4)t='Drag a red dot to move the frame, then ride.';
- else if(V===5&&!fl.v){const n=(Array.isArray(A.p4)?A.p4:[]).length;t='Select all that apply.'+(n?'\n'+n+' selected. Press Check when you\'re ready.':'')}
+ else if(V===5&&!fl.v){const n=(Array.isArray(A.p4)?A.p4:[]).length;t='Select all that apply.'+(fl.part?'\n1 of 2 correct answers. One is still missing.':n?'\n'+n+' selected. Press Check when you\'re ready.':'')}
  {let w=$('wtd');if(!w){const ct=document.querySelector('.ctl');if(ct){w=document.createElement('p');w.id='wtd';w.className='todo';w.textContent='Watch how the little rider moves.';ct.prepend(w)}}if(w)w.classList.toggle('hidden',!(V===2&&fl.wt))}for(const[id,s]of[['todo',t],['lead',l]]){const e=$(id);if(e.textContent!==s)e.textContent=s;e.classList.toggle('hidden',!s)}}
-let last=0;function fr(t){const dt=Math.min((t-last)/1000,.05);last=t;
+let E3I=null,GD=0;
+function setAng(na){const d=na-ang,m=Math.max(1,Math.ceil(Math.abs(d)/.01)),h=d/m;for(let i=0;i<m;i++){const b0=bnd(sh,ang);ang+=h;const b1=bnd(sh,ang);adv+=h*(b0.hi+b1.hi)/2}const T=tipRange();if((!E3I||E3I.ph===3)&&ang>=T.lo-1e-6&&ang<=T.hi+1e-6){fl.tl=Math.min(fl.tl,Math.max(T.lo,ang));fl.th=Math.max(fl.th,Math.min(T.hi,ang))}}
+function startIntro(){const T=tipRange();ax=0;ay=0;tr=[];trD=[];let ad=0;for(let x=T.lo-9.5;x<T.lo;x+=.004){ad+=.004*bnd(sh,x).hi}E3I={ph:0,t:0};ang=T.lo-9.5;adv=-ad;play=false;$('play').textContent='▶ Play';fl.tl=fl.th=T.lo;GD=0}
+function introStep(dt){const T=tipRange(),E=.6,mid=(T.lo+T.hi)/2,A=(T.hi-T.lo)/2;E3I.t+=dt;const t=E3I.t;
+ if(E3I.ph===0){setAng(Math.min(T.hi,ang+dt*1.92));if(ang>=T.hi-1e-9){E3I={ph:1,t:0}}}
+ else if(E3I.ph===1){setAng(T.hi+E*Math.sin(Math.min(1,t/.55)*PI/2));if(t>=.55)E3I={ph:2,t:0}}
+ else if(E3I.ph===2){const u=Math.min(1,t/.6);setAng(T.hi+E*Math.cos(u*PI/2));if(u>=1){fl.tl=fl.th=T.hi;E3I={ph:3,t:0}}}
+ else if(E3I.ph===3){const P=4.5,u=Math.min(1,t/P);setAng(mid+A*Math.cos(2.5*PI*u));if(u>=1){E3I=null}}}
+let last=0;function fr(t){const dt=Math.min((t-last)/1000,.05);last=t;if(V===3&&E3I)introStep(dt);
  if(play&&U)rot(dt*1.3*(V===3?TD*.6:1));ui();if(V===1)document.querySelectorAll('canvas.mc').forEach(k=>drawMini(k,t));if(HX.classList.contains('on'))drawHint(HX.querySelector('canvas'),t-hT0);draw();requestAnimationFrame(fr)}
 function renderFb(html,cls,head,an){const e=$('fb');let h=head;if(!h){if(cls==='ok')h='Nice work!';else if(cls==='warn')h=(fl.e||1)<=1?'Take another look!':'Here\'s a hint!';else h=''}
  e.innerHTML='<span class="fbi"></span><div class="fbt">'+(h?'<b class="fh">'+h+'</b>':'')+'<div>'+html+'</div></div><button type="button" class="pri fbn">'+$('next').textContent+'</button>';e.className='fb '+cls;syncFb()}
@@ -1408,7 +1688,7 @@ $('hb').onclick=()=>{closeFS();go(0)};
  setInterval(()=>{const t=T.textContent;if(t!==lastTxt){lastTxt=t;rs()}if(performance.now()-lastIn<7000)return;lastIn=performance.now();if(!t||T.classList.contains('hidden')||/✓|…/.test(t))return;T.classList.remove('nudge');void T.offsetWidth;T.classList.add('nudge')},500)})();
 function okfb(m,cls){const ok=cls==='ok';document.querySelectorAll('.opt').forEach(b=>b.classList.toggle('okm',ok&&b.classList.contains('sel')));document.querySelectorAll('#q input').forEach(i=>i.classList.toggle('okm',ok));const f=$('fb');f.style.removeProperty('display');if(ok&&!String(m||'').replace(/<[^>]*>/g,'').trim()){f.classList.add('hidden');f.style.setProperty('display','none','important')}syncFb()}
 const HX=document.createElement('div');HX.id='cxs';HX.innerHTML='<div class="fsi"><button type="button" class="fsx" aria-label="Close">✕</button><div class="cxh"><span class="cxi"></span><span id="cxm"></span></div><canvas class="fbc" id="cv3" role="img"></canvas><button type="button" class="pri" id="cxok">Back to the question</button></div>';document.body.appendChild(HX);let hT0=0;
-const HXM={pts:'Can attaching the frame somewhere other than the center reduce the ups and downs?',size:'Watch the little rider on a bike with a big and a small wheel.',board:'Watch the board and the centers of the wheels.',ok:'<b class="kih">KEY IDEA</b>The top of a Reuleaux triangle always stays at the same height, so the frame can rest on top of the wheels, just like the board in Lesson 1. Hinges let the wheel centers move up and down. See the real bike in action in the <a href="https://www.youtube.com/watch?v=GFa77G9HTj0" target="_blank" rel="noopener">video by The Q</a>.',board2:'Watch the board and the centers of the wheels. A frame that just rests on the wheels would slide off. How can it stay attached?'},HXA={board2:'Animation: a board with a little rider rests on two rolling Reuleaux triangles. The board stays level while the centers of the triangles go up and down.',board:'Animation: a board with a little rider rests on two rolling Reuleaux triangles. The board stays level while the centers of the triangles go up and down.',pts:'Animation: two rolling Reuleaux triangles. Both the red dot at the center and the red dot halfway to a corner go up and down.',ok:'Animation: a bike whose frame rests on top of two Reuleaux triangle wheels. Hinged arms connect the frame to the wheel centers, and the little rider stays at the same height.',size:'Animation: a bike with a big and a small Reuleaux triangle wheel. The frame is attached at the centers, and the little rider still rises and falls.'};
+const HXM={pts:'Can attaching the frame somewhere other than the center reduce the ups and downs?',size:'With different sizes, the two centers rise and fall at different moments. The little rider still rises and falls.',board:'<b class="ahd">Almost there!</b>One correct answer is still missing. Watch the board and the centers of the wheels.',ok:'<b class="kih">KEY IDEA</b>The top of a Reuleaux triangle always stays at the same height, so the frame can rest on top of the wheels, just like the board in Lesson 1. Hinges let the wheel centers move up and down. In the real bike, small rollers on the frame roll along the tops of the wheels. See the real bike in action in the <a href="https://www.youtube.com/watch?v=GFa77G9HTj0" target="_blank" rel="noopener">video by The Q</a>.',hinge:'<b class="ahd">Almost there!</b>One correct answer is still missing. Hinges let the parts holding the wheels move. But what keeps the frame at the same height?',board2:'<b class="ahd">Almost there!</b>One correct answer is still missing. If the frame rested on top of the wheels, the little rider would stay at the same height. But the frame would slide off the wheels. It needs to be attached somehow.'},HXA={hinge:'Animation: a board with a little rider is attached to the wheel centers only by hinged arms. The arms fold, the board sinks to the wheel centers and rises and falls with them.',board2:'Animation: a board with a little rider rests on two rolling Reuleaux triangles. The board moves faster than the wheels, slides off the front wheel and falls to the ground.',board:'Animation: a board with a little rider rests on two rolling Reuleaux triangles. The board stays level while the centers of the triangles go up and down.',pts:'Animation: two rolling Reuleaux triangles. Both the red dot at the center and the red dot halfway to a corner go up and down.',ok:'Animation: a bike whose frame rests on top of two Reuleaux triangle wheels. Hinged arms connect the frame to the wheel centers, and the little rider stays at the same height.',size:'Animation: a bike with a big and a small Reuleaux triangle wheel. The frame is attached at the centers, and the little rider still rises and falls.'};
 function openH(a){const k=HX.querySelector('canvas');k.dataset.a=a;k.setAttribute('aria-label',HXA[a]);HX.querySelector('#cxm').innerHTML=HXM[a];HX.querySelector('#cxok').textContent=a==='ok'?'Close':'Back to the question';HX.classList.toggle('isok',a==='ok');HX.classList.add('on');hT0=performance.now()}
 function closeH(){HX.classList.remove('on')}
 HX.querySelector('.fsx').onclick=closeH;$('rpl').onclick=()=>openH('ok');HX.querySelector('#cxok').onclick=closeH;
@@ -1416,7 +1696,9 @@ function startScreen(){try{if(LS.getItem('cw-en-go1')){LS.removeItem('cw-en-go1'
 function liftQ(){const t=$('t'),q=$('q'),lg=q.querySelector('legend'),s=SC[V]||{};if(!t)return;if(lg&&lg.childNodes.length&&!q.classList.contains('hidden'))t.replaceChildren(...lg.childNodes);else t.innerHTML=s.h||s.t||''}
 function liftT(){const td=$('todo'),st=$('stage');if(td&&st&&!$('q').contains(td))st.before(td)}
 {const _g=go;go=function(k){_g(k);if(k){liftQ();liftT();}}}
-requestAnimationFrame(fr);go(startScreen());
+requestAnimationFrame(fr);{const st=$('stage');st.style.position='relative';const bt=document.createElement('button');bt.type='button';bt.id='rpi';bt.className='sec hidden';bt.textContent='↺ Replay the intro';bt.style.cssText='position:absolute;right:14px;top:14px;z-index:5';bt.onclick=()=>{startIntro()};st.appendChild(bt);
+ const _gI=go;go=function(k){E3I=null;_gI(k);bt.classList.toggle('hidden',k!==3);if(k===3){if(fl.iv){const T=tipRange();setAng((T.lo+T.hi)/2);if(nok){fl.tl=T.lo;fl.th=T.hi}}else{fl.iv=1;startIntro()}}}}
+go(startScreen());
 <\/script></body></html>
 </script>
 <script>
